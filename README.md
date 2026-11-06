@@ -10,7 +10,7 @@
   </a>
   <img width="100%" alt="" src="assets/divider.svg" />
 
-<h2 align="center">Table of Contents</h2>
+<h2 align="center">TABLE OF CONTENTS</h2>
 
 <p align="center">
   <a href="#about"><img src="assets/nav/about.svg" alt="About" /></a>
