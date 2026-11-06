@@ -7,13 +7,13 @@
     <img src="https://img.shields.io/badge/Bahasa_Indonesia-2563eb?style=flat-square&logo=github&logoColor=white" alt="Bahasa Indonesia" />
   </a>
   <p align="center">
-  <a href="#about"><img src="https://img.shields.io/badge/TENTANG-2563eb?style=flat-square" alt="Tentang" /></a>
-  <a href="#approach"><img src="https://img.shields.io/badge/PENDEKATAN-2563eb?style=flat-square" alt="Pendekatan" /></a>
-  <a href="#projects"><img src="https://img.shields.io/badge/PROYEK-2563eb?style=flat-square" alt="Proyek" /></a>
-  <a href="#technology-stack"><img src="https://img.shields.io/badge/TECH_&_TOOLS-2563eb?style=flat-square" alt="Teknologi dan perangkat" /></a>
-  <a href="#github-analytics"><img src="https://img.shields.io/badge/STATISTIK-2563eb?style=flat-square" alt="Statistik GitHub" /></a>
-  <a href="#collaboration"><img src="https://img.shields.io/badge/KOLABORASI-2563eb?style=flat-square" alt="Kolaborasi" /></a>
-  <a href="#guestbook"><img src="https://img.shields.io/badge/GUESTBOOK-2563eb?style=flat-square" alt="Guestbook" /></a>
+  <a href="#about"><img src="assets/id/nav/tentang.svg" alt="Tentang" /></a>
+  <a href="#approach"><img src="assets/id/nav/pendekatan.svg" alt="Pendekatan" /></a>
+  <a href="#projects"><img src="assets/id/nav/proyek.svg" alt="Proyek" /></a>
+  <a href="#technology-stack"><img src="assets/id/nav/tech-tools.svg" alt="Teknologi dan perangkat" /></a>
+  <a href="#github-analytics"><img src="assets/id/nav/statistik.svg" alt="Statistik GitHub" /></a>
+  <a href="#collaboration"><img src="assets/id/nav/kolaborasi.svg" alt="Kolaborasi" /></a>
+  <a href="#guestbook"><img src="assets/id/nav/guestbook.svg" alt="Guestbook" /></a>
 </p><img width="100%" alt="" src="assets/divider.svg" /></div><a id="about"></a>
 
 <div align="left"><h2><code>kiisafezone:~$ about</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
