@@ -99,21 +99,11 @@ Projects focused on practical solutions, software engineering, and developer pro
 
 <div align="center">
 
-<img width="640" alt="Featured projects: UsahaOS, LarasHRIS, RELÂCHE" src="assets/featured.svg" />
-
-</div>
-
-<div align="center">
-
-<a href="https://github.com/kiisafezone/usahaos"><img alt="UsahaOS" src="https://img.shields.io/badge/USAHAOS-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-<a href="https://github.com/kiisafezone/larashris"><img alt="LarasHRIS" src="https://img.shields.io/badge/LARASHRIS-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-<a href="https://github.com/kiisafezone/relache-production"><img alt="RELACHE" src="https://img.shields.io/badge/RELACHE-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
-
-</div>
-
-<div align="center">
-
-<a href="https://github.com/kiisafezone?tab=repositories"><img alt="View all repositories" src="https://img.shields.io/badge/VIEW%20ALL%20REPOSITORIES-2563eb?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/kiisafezone/usahaos"><img width="49%" alt="UsahaOS" src="assets/cards/usahaos.svg" /></a>
+<a href="https://github.com/kiisafezone/larashris"><img width="49%" alt="LarasHRIS" src="assets/cards/larashris.svg" /></a>
+<a href="https://github.com/kiisafezone/relache-app"><img width="49%" alt="RELÂCHE" src="assets/cards/relache-app.svg" /></a>
+<a href="https://github.com/kiisafezone/livexis"><img width="49%" alt="Livexis" src="assets/cards/livexis.svg" /></a>
+<a href="https://github.com/kiisafezone/nospotify-hybrid"><img width="49%" alt="NoSpotify Hybrid" src="assets/cards/nospotify-hybrid.svg" /></a>
 
 </div>
 
