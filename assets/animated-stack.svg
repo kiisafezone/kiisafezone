@@ -1,136 +1,489 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="200" viewBox="0 0 1450 200" role="img" aria-labelledby="title desc">
-<title id="title">macOS glass technology stack</title>
-<desc id="desc">Five macOS-inspired glass technology cards appear individually from left to right with a staggered slide-up fade-in animation.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 135" width="100%" height="135" role="img" aria-labelledby="title desc">
+<title id="title">Technologies and tools</title>
+<desc id="desc">A continuous macOS glass-style marquee displaying 25 technologies and development tools.</desc>
 <defs>
   <linearGradient id="macBg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#020617"/>
-    <stop offset=".5" stop-color="#0a1740"/>
-    <stop offset="1" stop-color="#172554"/>
-  </linearGradient>
-  <linearGradient id="glassBorder" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#fff" stop-opacity=".42"/>
-    <stop offset=".42" stop-color="#fff" stop-opacity=".08"/>
-    <stop offset="1" stop-color="#60a5fa" stop-opacity=".34"/>
+    <stop offset="0%" stop-color="#020617"/>
+    <stop offset="55%" stop-color="#0a1740"/>
+    <stop offset="100%" stop-color="#172554"/>
   </linearGradient>
   <linearGradient id="glassFill" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#fff" stop-opacity=".15"/>
-    <stop offset="1" stop-color="#fff" stop-opacity=".035"/>
+    <stop offset="0%" stop-color="#fff" stop-opacity=".15"/>
+    <stop offset="100%" stop-color="#fff" stop-opacity=".04"/>
   </linearGradient>
-  <linearGradient id="glassShine" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#fff" stop-opacity=".2"/>
-    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  <linearGradient id="glassBorder" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#fff" stop-opacity=".4"/>
+    <stop offset="100%" stop-color="#3b82f6" stop-opacity=".3"/>
   </linearGradient>
-  <filter id="orbBlur" x="-60%" y="-60%" width="220%" height="220%">
-    <feGaussianBlur stdDeviation="24"/>
-  </filter>
-  <filter id="cardShadow" x="-15%" y="-20%" width="130%" height="150%">
-    <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#000" flood-opacity=".38"/>
-  </filter>
+  <radialGradient id="blueOrb">
+    <stop offset="0%" stop-color="#3b82f6" stop-opacity=".3"/>
+    <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="purpleOrb">
+    <stop offset="0%" stop-color="#7c3aed" stop-opacity=".2"/>
+    <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+  </radialGradient>
   <style>
-    .stack-card {
-      opacity: 0;
-      animation: cardReveal .85s cubic-bezier(.16,1,.3,1) forwards;
-    }
-    .card-1 { animation-delay: .12s; }
-    .card-2 { animation-delay: .30s; }
-    .card-3 { animation-delay: .48s; }
-    .card-4 { animation-delay: .66s; }
-    .card-5 { animation-delay: .84s; }
-    .category {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 1.15px;
-      fill: #eaf2ff;
-    }
-    .tech {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 12px;
-      font-weight: 600;
-      fill: #f1f5ff;
-    }
-    .hint {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 9px;
-      letter-spacing: 1.15px;
-      fill: #a9bddb;
-    }
-    @keyframes cardReveal {
-      from { opacity: 0; transform: translateY(20px) scale(.96); }
-      to { opacity: 1; transform: translateY(0) scale(1); }
-    }
+    .moving-group { animation: scrollMarquee 64s linear infinite; }
+    @keyframes scrollMarquee { from { transform: translateX(0); } to { transform: translateX(-3875px); } }
+    @media (prefers-reduced-motion: reduce) { .moving-group { animation: none; } }
   </style>
 </defs>
-
-<rect x="2" y="2" width="1446" height="196" rx="20" fill="url(#macBg)" stroke="#dbeafe" stroke-opacity=".22"/>
-<circle cx="155" cy="155" r="72" fill="#3b82f6" opacity=".38" filter="url(#orbBlur)"/>
-<circle cx="650" cy="35" r="78" fill="#7c3aed" opacity=".28" filter="url(#orbBlur)"/>
-<circle cx="1280" cy="145" r="75" fill="#ec4899" opacity=".22" filter="url(#orbBlur)"/>
-<path d="M22 2H1428Q1448 2 1448 22V48H2V22Q2 2 22 2Z" fill="#fff" opacity=".035"/>
-<path d="M22 2H1428" stroke="#fff" stroke-opacity=".24"/>
-
-<g class="stack-card card-1" transform="translate(30 30)" filter="url(#cardShadow)">
-  <rect width="260" height="140" rx="16" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2"/>
-  <path d="M16 1H244Q259 1 259 16V42H1V16Q1 1 16 1Z" fill="url(#glassShine)" opacity=".7"/>
-  <circle cx="20" cy="20" r="4.5" fill="#ff5f57"/>
-  <circle cx="35" cy="20" r="4.5" fill="#febc2e"/>
-  <circle cx="50" cy="20" r="4.5" fill="#28c840"/>
-  <text class="category" x="20" y="58" fill="#7dd3fc">MOBILE STACK</text>
-  <rect x="220" y="49" width="18" height="25" rx="5" fill="#7dd3fc" opacity=".85"/>
-  <text class="tech" x="20" y="91">Kotlin · Android Studio</text>
-  <text class="tech" x="20" y="111">Flutter · Dart</text>
-  <text class="hint" x="20" y="130">APP DEVELOPMENT</text>
-</g>
-
-<g class="stack-card card-2" transform="translate(310 30)" filter="url(#cardShadow)">
-  <rect width="260" height="140" rx="16" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2"/>
-  <path d="M16 1H244Q259 1 259 16V42H1V16Q1 1 16 1Z" fill="url(#glassShine)" opacity=".7"/>
-  <circle cx="20" cy="20" r="4.5" fill="#ff5f57"/>
-  <circle cx="35" cy="20" r="4.5" fill="#febc2e"/>
-  <circle cx="50" cy="20" r="4.5" fill="#28c840"/>
-  <text class="category" x="20" y="58" fill="#6ee7b7">WEB STACK</text>
-  <path d="M220 50h20v13h-20zM224 66h12v2h-12z" fill="#6ee7b7" opacity=".9"/>
-  <text class="tech" x="20" y="91">HTML · CSS · JavaScript</text>
-  <text class="tech" x="20" y="111">TypeScript · React</text>
-  <text class="hint" x="20" y="130">WEB DEVELOPMENT</text>
-</g>
-
-<g class="stack-card card-3" transform="translate(590 30)" filter="url(#cardShadow)">
-  <rect width="260" height="140" rx="16" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2"/>
-  <path d="M16 1H244Q259 1 259 16V42H1V16Q1 1 16 1Z" fill="url(#glassShine)" opacity=".7"/>
-  <circle cx="20" cy="20" r="4.5" fill="#ff5f57"/>
-  <circle cx="35" cy="20" r="4.5" fill="#febc2e"/>
-  <circle cx="50" cy="20" r="4.5" fill="#28c840"/>
-  <text class="category" x="20" y="58" fill="#c4b5fd">BACKEND STACK</text>
-  <path d="M218 50h20v5h-20zM218 59h20v5h-20z" fill="#c4b5fd" opacity=".9"/>
-  <text class="tech" x="20" y="91">Python · Flask</text>
-  <text class="tech" x="20" y="111">Node.js · Express</text>
-  <text class="hint" x="20" y="130">SERVER DEVELOPMENT</text>
-</g>
-
-<g class="stack-card card-4" transform="translate(870 30)" filter="url(#cardShadow)">
-  <rect width="260" height="140" rx="16" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2"/>
-  <path d="M16 1H244Q259 1 259 16V42H1V16Q1 1 16 1Z" fill="url(#glassShine)" opacity=".7"/>
-  <circle cx="20" cy="20" r="4.5" fill="#ff5f57"/>
-  <circle cx="35" cy="20" r="4.5" fill="#febc2e"/>
-  <circle cx="50" cy="20" r="4.5" fill="#28c840"/>
-  <text class="category" x="20" y="58" fill="#fcd34d">DATA STACK</text>
-  <path d="M220 50c5 0 8 1 8 3s-3 3-8 3-8-1-8-3 3-3 8-3zm-8 7v8c0 2 3 3 8 3s8-1 8-3v-8c-2 2-5 2-8 2s-6 0-8-2z" fill="#fcd34d" opacity=".9"/>
-  <text class="tech" x="20" y="91">PostgreSQL</text>
-  <text class="tech" x="20" y="111">Supabase</text>
-  <text class="hint" x="20" y="130">DATABASE &amp; STORAGE</text>
-</g>
-
-<g class="stack-card card-5" transform="translate(1150 30)" filter="url(#cardShadow)">
-  <rect width="260" height="140" rx="16" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2"/>
-  <path d="M16 1H244Q259 1 259 16V42H1V16Q1 1 16 1Z" fill="url(#glassShine)" opacity=".7"/>
-  <circle cx="20" cy="20" r="4.5" fill="#ff5f57"/>
-  <circle cx="35" cy="20" r="4.5" fill="#febc2e"/>
-  <circle cx="50" cy="20" r="4.5" fill="#28c840"/>
-  <text class="category" x="20" y="58" fill="#fda4af">INFRA STACK</text>
-  <path d="M223 55a4 4 0 0 0-7-2 4 4 0 0 0-5 4 4 4 0 0 0 4 4h10a4 4 0 0 0-2-6z" fill="#fda4af" opacity=".9"/>
-  <text class="tech" x="20" y="91">Docker · Cloudflare · Vercel</text>
-  <text class="tech" x="20" y="111">Git · GitHub · Linux</text>
-  <text class="hint" x="20" y="130">TOOLS &amp; INFRASTRUCTURE</text>
+<rect width="800" height="135" fill="url(#macBg)" rx="16"/>
+<circle cx="150" cy="80" r="100" fill="url(#blueOrb)"/>
+<circle cx="600" cy="50" r="120" fill="url(#purpleOrb)"/>
+<g class="moving-group">
+  <g transform="translate(20 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Kotlin</text>
+  </g>
+<g transform="translate(175 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">Android Studio</text>
+  </g>
+<g transform="translate(330 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Flutter</text>
+  </g>
+<g transform="translate(485 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Dart</text>
+  </g>
+<g transform="translate(640 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">HTML5</text>
+  </g>
+<g transform="translate(795 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">CSS3</text>
+  </g>
+<g transform="translate(950 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">JavaScript</text>
+  </g>
+<g transform="translate(1105 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">TypeScript</text>
+  </g>
+<g transform="translate(1260 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">React</text>
+  </g>
+<g transform="translate(1415 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Python</text>
+  </g>
+<g transform="translate(1570 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Flask</text>
+  </g>
+<g transform="translate(1725 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Node.js</text>
+  </g>
+<g transform="translate(1880 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">Express.js</text>
+  </g>
+<g transform="translate(2035 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">PostgreSQL</text>
+  </g>
+<g transform="translate(2190 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Supabase</text>
+  </g>
+<g transform="translate(2345 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Docker</text>
+  </g>
+<g transform="translate(2500 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">Cloudflare</text>
+  </g>
+<g transform="translate(2655 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Vercel</text>
+  </g>
+<g transform="translate(2810 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Git</text>
+  </g>
+<g transform="translate(2965 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">GitHub</text>
+  </g>
+<g transform="translate(3120 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">GitHub Actions</text>
+  </g>
+<g transform="translate(3275 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">GitHub Copilot</text>
+  </g>
+<g transform="translate(3430 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#fff">GitHub Codespaces</text>
+  </g>
+<g transform="translate(3585 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Linux</text>
+  </g>
+<g transform="translate(3740 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Terminal</text>
+  </g>
+  <g transform="translate(3875 0)">
+    <g transform="translate(20 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Kotlin</text>
+  </g>
+<g transform="translate(175 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">Android Studio</text>
+  </g>
+<g transform="translate(330 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Flutter</text>
+  </g>
+<g transform="translate(485 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Dart</text>
+  </g>
+<g transform="translate(640 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">HTML5</text>
+  </g>
+<g transform="translate(795 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">CSS3</text>
+  </g>
+<g transform="translate(950 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">JavaScript</text>
+  </g>
+<g transform="translate(1105 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">TypeScript</text>
+  </g>
+<g transform="translate(1260 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">React</text>
+  </g>
+<g transform="translate(1415 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Python</text>
+  </g>
+<g transform="translate(1570 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Flask</text>
+  </g>
+<g transform="translate(1725 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Node.js</text>
+  </g>
+<g transform="translate(1880 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">Express.js</text>
+  </g>
+<g transform="translate(2035 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">PostgreSQL</text>
+  </g>
+<g transform="translate(2190 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Supabase</text>
+  </g>
+<g transform="translate(2345 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Docker</text>
+  </g>
+<g transform="translate(2500 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#fff">Cloudflare</text>
+  </g>
+<g transform="translate(2655 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Vercel</text>
+  </g>
+<g transform="translate(2810 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Git</text>
+  </g>
+<g transform="translate(2965 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">GitHub</text>
+  </g>
+<g transform="translate(3120 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">GitHub Actions</text>
+  </g>
+<g transform="translate(3275 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">GitHub Copilot</text>
+  </g>
+<g transform="translate(3430 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#fff">GitHub Codespaces</text>
+  </g>
+<g transform="translate(3585 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Linux</text>
+  </g>
+<g transform="translate(3740 20)">
+    <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".3" rx="12"/>
+    <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
+    <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
+    <circle cx="15" cy="15" r="4" fill="#ff5f57"/>
+    <circle cx="27" cy="15" r="4" fill="#febc2e"/>
+    <circle cx="39" cy="15" r="4" fill="#28c840"/>
+    <text x="67.5" y="64" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#fff">Terminal</text>
+  </g>
+  </g>
 </g>
 </svg>
