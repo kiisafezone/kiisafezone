@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280" role="img" aria-labelledby="title desc">
+  <title id="title">Animated technology stack</title>
+  <desc id="desc">Technology labels travel individually upward and curve left along a looping path.</desc>
+  <defs>
+    <linearGradient id="route" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563eb" stop-opacity=".12"/>
+      <stop offset=".55" stop-color="#60a5fa" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity=".12"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-60%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="280" rx="16" fill="#0d1117"/>
+  <path d="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" fill="none" stroke="#1e293b" stroke-width="2" stroke-dasharray="5 8"/>
+  <path d="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" fill="none" stroke="url(#route)" stroke-width="2.5" stroke-linecap="round" opacity=".9"/>
+  <text x="28" y="34" fill="#64748b" font-family="monospace" font-size="11" letter-spacing="2">TECHNOLOGY STACK  /  IN MOTION</text>
+  <g fill="#60a5fa" opacity=".55"><circle cx="842" cy="242" r="3"/><circle cx="28" cy="44" r="3"/></g>
+  <g font-family="monospace" font-size="13" font-weight="600" text-anchor="middle">
+    <g transform="translate(0 0)"><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#111d31" stroke="#315b9b"/><text y="5" fill="#bfdbfe">Kotlin</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-0s" repeatCount="indefinite" rotate="auto"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#111d31" stroke="#315b9b"/><text y="5" fill="#bfdbfe">Android</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-0.82s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#111d31" stroke="#315b9b"/><text y="5" fill="#bfdbfe">Flutter</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-1.64s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#111d31" stroke="#315b9b"/><text y="5" fill="#bfdbfe">Dart</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-2.46s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#172033" stroke="#475569"/><text y="5" fill="#e2e8f0">HTML</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-3.28s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#172033" stroke="#475569"/><text y="5" fill="#e2e8f0">CSS</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-4.1s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#172033" stroke="#475569"/><text y="5" fill="#e2e8f0">JavaScript</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-4.92s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#172033" stroke="#475569"/><text y="5" fill="#e2e8f0">TypeScript</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-5.74s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#172033" stroke="#475569"/><text y="5" fill="#e2e8f0">React</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-6.56s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#10251f" stroke="#276749"/><text y="5" fill="#bbf7d0">Python</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-7.38s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#10251f" stroke="#276749"/><text y="5" fill="#bbf7d0">Flask</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-8.2s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#10251f" stroke="#276749"/><text y="5" fill="#bbf7d0">Node.js</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-9.02s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#10251f" stroke="#276749"/><text y="5" fill="#bbf7d0">Express</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-9.84s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#211b35" stroke="#6d4ca5"/><text y="5" fill="#ddd6fe">Postgres</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-10.66s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#211b35" stroke="#6d4ca5"/><text y="5" fill="#ddd6fe">Supabase</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-11.48s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#292016" stroke="#9a6b2f"/><text y="5" fill="#fde68a">Docker</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-12.3s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#292016" stroke="#9a6b2f"/><text y="5" fill="#fde68a">Cloudflare</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-13.12s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#292016" stroke="#9a6b2f"/><text y="5" fill="#fde68a">Vercel</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-13.94s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#292016" stroke="#9a6b2f"/><text y="5" fill="#fde68a">Git</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-14.76s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#292016" stroke="#9a6b2f"/><text y="5" fill="#fde68a">GitHub</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-15.58s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#292016" stroke="#9a6b2f"/><text y="5" fill="#fde68a">Actions</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-16.4s" repeatCount="indefinite"/></g>
+    <g><rect x="-48" y="-17" width="96" height="34" rx="9" fill="#292016" stroke="#9a6b2f"/><text y="5" fill="#fde68a">Linux</text><animateMotion path="M900 242 C760 242 790 178 690 166 S560 208 510 135 S390 42 300 86 S130 150 -24 44" dur="18s" begin="-17.22s" repeatCount="indefinite"/></g>
+  </g>
+</svg>
