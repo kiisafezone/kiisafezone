@@ -12,7 +12,7 @@ A cinematic Remotion composition built around the real visual assets in the repo
 
 ## Requirements
 
-- Node.js 18.ism or newer (Node.js 20 LTS recommended)
+- Node.js 18 or newer (Node.js 20 LTS recommended)
 - npm
 - A supported desktop or cloud environment for Chromium-based rendering
 
