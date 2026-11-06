@@ -8,15 +8,23 @@
   <a href="README.id.md">
     <img src="https://img.shields.io/badge/Bahasa_Indonesia-334155?style=flat-square&logo=github&logoColor=white" alt="Bahasa Indonesia" />
   </a>
-  <p align="center">
+  <img width="100%" alt="" src="assets/divider.svg" />
+
+<h2 align="center">Table of Contents</h2>
+
+<p align="center">
   <a href="#about"><img src="assets/nav/about.svg" alt="About" /></a>
   <a href="#approach"><img src="assets/nav/approach.svg" alt="Approach" /></a>
   <a href="#projects"><img src="assets/nav/projects.svg" alt="Projects" /></a>
   <a href="#technology-stack"><img src="assets/nav/stack.svg" alt="Stack" /></a>
+</p>
+<p align="center">
   <a href="#github-analytics"><img src="assets/nav/analytics.svg" alt="Analytics" /></a>
   <a href="#collaboration"><img src="assets/nav/connect.svg" alt="Connect" /></a>
   <a href="#guestbook"><img src="assets/nav/guestbook.svg" alt="Guestbook" /></a>
-</p><img width="100%" alt="" src="assets/divider.svg" /></div><a id="about"></a>
+</p>
+
+<img width="100%" alt="" src="assets/divider.svg" /></div><a id="about"></a>
 
 <div align="left"><h2><code>kiisafezone:~$ about</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
   <img width="640" alt="Terminal animation: whoami, cat about.py" src="assets/about-typing.svg" />
