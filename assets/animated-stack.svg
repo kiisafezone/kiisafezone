@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 1115" width="100%" role="img" aria-labelledby="title desc">
 <title id="title">Technology and tools</title>
-<desc id="desc">A fixed four-column macOS Glass grid showing 25 technology and development tool logos.</desc>
+<desc id="desc">A fixed four-column macOS Grids App Glass theme showing 25 technology and development tool logos.</desc>
 <defs>
  <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101d3b"/><stop offset="1" stop-color="#07132f"/></linearGradient>
  <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#273653" stop-opacity=".9"/><stop offset="1" stop-color="#1b2944" stop-opacity=".95"/></linearGradient>
@@ -16,9 +16,9 @@
 </defs>
 <rect width="800" height="1115" rx="34" fill="url(#background)"/>
 <circle cx="125" cy="230" r="240" fill="url(#ambient)"/><circle cx="710" cy="850" r="260" fill="url(#ambient)"/>
-<rect x="28" y="26" width="110" height="40" rx="20" fill="#dbeafe" opacity=".12" stroke="#cbd5e1" stroke-opacity=".15"/>
-<text x="83" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#e2e8f0">macOS Glass</text>
-<text x="158" y="51" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2" fill="#cbd5e1">TECHNOLOGIES &amp; TOOLS</text>
+<rect x="28" y="26" width="160" height="40" rx="20" fill="#dbeafe" opacity=".12" stroke="#cbd5e1" stroke-opacity=".15"/>
+<text x="108" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#e2e8f0">macOS Grids App Glass</text>
+<text x="208" y="51" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2" fill="#cbd5e1">TECHNOLOGIES &amp; TOOLS</text>
 <g class="card" style="--i:0" transform="translate(28 84)">
  <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
  <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
