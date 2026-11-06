@@ -18,6 +18,10 @@ A cinematic Remotion composition built around the real visual assets in the repo
 
 Rendering requires a compatible Chromium environment and FFmpeg. An Android phone can be used to review/edit the source in GitHub, but it is not the recommended environment for rendering the final MP4.
 
+## Render in Google Colab (recommended for Android)
+
+Open the [render notebook in Google Colab](https://colab.research.google.com/github/kiisafezone/kiisafezone/blob/main/showcase/render-on-colab.ipynb), connect to a runtime, then run the cells from top to bottom. The notebook installs Node.js and FFmpeg in a temporary cloud runtime, clones this repository, renders the MP4, and downloads it to your device. It does not create GitHub Actions workflows or change repository files. Colab runtime availability and limits depend on Google's current free-tier policies.
+
 ## Run locally
 
 From this directory:
