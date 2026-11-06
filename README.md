@@ -22,7 +22,9 @@
 <a id="about"></a>
 
 <div align="center">
-<img width="640" alt="about" src="assets/section-about.svg" />
+## ~/about
+
+<img width="640" alt="" src="assets/line.svg" />
 </div>
 
 <div align="center">
@@ -59,7 +61,9 @@ class KiiSafeZone:
 ```
 
 <div align="center">
-<img width="640" alt="approach" src="assets/section-approach.svg" />
+## ~/approach
+
+<img width="640" alt="" src="assets/line.svg" />
 </div>
 
 <div align="center">
@@ -71,7 +75,9 @@ class KiiSafeZone:
 <a id="projects"></a>
 
 <div align="center">
-<img width="640" alt="featured projects" src="assets/section-featured.svg" />
+## ~/projects
+
+<img width="640" alt="" src="assets/line.svg" />
 </div>
 
 <div align="center">
@@ -93,7 +99,9 @@ class KiiSafeZone:
 <a id="technology-stack"></a>
 
 <div align="center">
-<img width="640" alt="stack" src="assets/section-stack.svg" />
+## ~/stack
+
+<img width="640" alt="" src="assets/line.svg" />
 </div>
 
 | | |
@@ -107,7 +115,9 @@ class KiiSafeZone:
 <a id="github-analytics"></a>
 
 <div align="center">
-<img width="640" alt="analytics" src="assets/section-analytics.svg" />
+## ~/analytics
+
+<img width="640" alt="" src="assets/line.svg" />
 </div>
 
 <div align="center">
@@ -118,7 +128,9 @@ class KiiSafeZone:
 <a id="collaboration"></a>
 
 <div align="center">
-<img width="640" alt="collaboration" src="assets/section-collaboration.svg" />
+## ~/collaboration
+
+<img width="640" alt="" src="assets/line.svg" />
 </div>
 
 I'm open to connecting with developers, engineers, researchers, maintainers, and organizations interested in building useful software.
@@ -138,7 +150,9 @@ Whether you're developing an interesting product, maintaining an open-source pro
 <a id="guestbook"></a>
 
 <div align="center">
-<img width="640" alt="guestbook" src="assets/section-guestbook.svg" />
+## ~/guestbook
+
+<img width="640" alt="" src="assets/line.svg" />
 </div>
 
 ```text
@@ -156,7 +170,9 @@ Whether you're developing an interesting product, maintaining an open-source pro
 <a id="connect"></a>
 
 <div align="center">
-<img width="640" alt="connect" src="assets/section-connect.svg" />
+## ~/connect
+
+<img width="640" alt="" src="assets/line.svg" />
 </div>
 
 <div align="center">
