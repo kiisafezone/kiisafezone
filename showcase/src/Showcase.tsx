@@ -249,6 +249,18 @@ const Closing: React.FC = () => {
 };
 
 export const ReadmeShowcase: React.FC = () => {
+  const frame = useCurrentFrame();
+  const cuts = [150, 330, 510, 690, 900, 1110];
+  const transitionOpacity = Math.max(
+    0,
+    ...cuts.map((cut) =>
+      interpolate(frame, [cut - 8, cut, cut + 8], [0, 1, 0], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      }),
+    ),
+  );
+
   return (
     <AbsoluteFill style={{ backgroundColor: C.ink, fontFamily: "Inter, Arial, sans-serif", overflow: "hidden" }}>
       <Sequence from={0} durationInFrames={150}><Intro /></Sequence>
@@ -258,6 +270,7 @@ export const ReadmeShowcase: React.FC = () => {
       <Sequence from={690} durationInFrames={210}><Projects /></Sequence>
       <Sequence from={900} durationInFrames={210}><Tech /></Sequence>
       <Sequence from={1110} durationInFrames={240}><Closing /></Sequence>
+      <AbsoluteFill style={{ backgroundColor: "#050816", opacity: transitionOpacity, pointerEvents: "none" }} />
     </AbsoluteFill>
   );
 };
