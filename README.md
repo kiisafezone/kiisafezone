@@ -37,8 +37,16 @@
 <br /></div><a id="technology-stack"></a>
 
 <div align="left"><h2><code>kiisafezone:~$ stack</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
-  <img width="100%" alt="Animated technology stack: category cards with existing Skill Icons scrolling from right to left" src="assets/animated-stack.svg" />
-</div><a id="github-analytics"></a>
+  <img width="100%" alt="Animated technology stack categories scrolling from right to left" src="assets/animated-stack.svg" />
+</div>
+
+<table width="100%">
+  <tr><td><code>mobile</code></td><td><img alt="Stack mobile" src="https://skillicons.dev/icons?i=kotlin,androidstudio,flutter,dart&amp;theme=dark" /></td></tr>
+  <tr><td><code>web</code></td><td><img alt="Stack web" src="https://skillicons.dev/icons?i=html,css,js,ts,react&amp;theme=dark" /></td></tr>
+  <tr><td><code>backend</code></td><td><img alt="Stack backend" src="https://skillicons.dev/icons?i=python,flask,nodejs,express&amp;theme=dark" /></td></tr>
+  <tr><td><code>data</code></td><td><img alt="Stack data" src="https://skillicons.dev/icons?i=postgres,supabase&amp;theme=dark" /></td></tr>
+  <tr><td><code>infra</code></td><td><img alt="Stack infrastructure" src="https://skillicons.dev/icons?i=docker,cloudflare,vercel,git,github,githubactions,linux&amp;theme=dark" /></td></tr>
+</table><a id="github-analytics"></a>
 
 <div align="left"><h2><code>kiisafezone:~$ analytics</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center"><img width="49%" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kiisafezone&theme=tokyonight" />
 <img width="49%" alt="Top languages" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kiisafezone&theme=tokyonight" /></div><a name="collaboration"></a>
