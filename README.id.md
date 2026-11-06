@@ -1,18 +1,16 @@
 <a id="top"></a>
 
-<p align="center"><a href="https://github.com/kiisafezone/kiisafezone/blob/main/README.md">English</a> · <a href="https://github.com/kiisafezone/kiisafezone/blob/main/README.id.md">Bahasa Indonesia</a></p>
+<p align="center"><a href="README.md">English</a> · <a href="README.id.md">Bahasa Indonesia</a></p>
 
 <div align="center">
 
 <img width="100%" alt="KIISAFEZONE: pengembang software independen dan kreator open-source" src="assets/id/header.svg" />
 
-<img alt="Tampilan profil" src="https://komarev.com/ghpvc/?username=kiisafezone&style=flat-square&color=2563eb&label=PROFILE+VIEWS" />
-<!-- <img alt="Pengikut" src="https://img.shields.io/github/followers/kiisafezone?style=flat-square&color=2563eb&label=Followers" /> -->
+<img alt="Tampilan profil" src="https://komarev.com/ghpvc/?username=kiisafezone&amp;style=flat-square&amp;color=2563eb&amp;label=PROFILE+VIEWS" />
 
 <a href="#about"><code>about</code></a> ·
 <a href="#projects"><code>projects</code></a> ·
 <a href="#technology-stack"><code>stack</code></a> ·
-<a href="#github-analytics"><code>analytics</code></a> ·
 <a href="#collaboration"><code>kolaborasi</code></a> ·
 <a href="#guestbook"><code>guestbook</code></a>
 
@@ -22,19 +20,21 @@
 
 <a id="about"></a>
 
-<div align="center">
-## ~/about
+<h3 align="center">~/about</h3>
 
+<div align="center">
 <img width="640" alt="" src="assets/line.svg" />
 </div>
 
 <div align="center">
-<img width="640" alt="Animasi terminal: whoami, cat about.py" src="assets/id/about-typing.svg" />
+<img width="640" alt="Animasi terminal: whoami, cat about.py. Pengembang software independen dan kreator open-source: pengembangan full-stack dan Android, keamanan aplikasi dan audit kode, otomasi berbantuan AI, kualitas software dan arsitektur. Berbahasa Indonesia (penutur asli) dan Inggris." src="assets/id/about-typing.svg" />
 </div>
 
-<div align="center">
-## ~/approach
+<a id="approach"></a>
 
+<h3 align="center">~/approach</h3>
+
+<div align="center">
 <img width="640" alt="" src="assets/line.svg" />
 </div>
 
@@ -46,9 +46,9 @@
 
 <a id="projects"></a>
 
-<div align="center">
-## ~/projects
+<h3 align="center">~/projects</h3>
 
+<div align="center">
 <img width="640" alt="" src="assets/line.svg" />
 </div>
 
@@ -68,40 +68,25 @@
 
 <a id="technology-stack"></a>
 
-<div align="center">
-## ~/stack
+<h3 align="center">~/stack</h3>
 
+<div align="center">
 <img width="640" alt="" src="assets/line.svg" />
 </div>
 
 <table width="100%">
-  <tr><td><code>mobile</code></td><td><img alt="Stack mobile" src="https://skillicons.dev/icons?i=kotlin,androidstudio,flutter,dart&theme=dark" /></td></tr>
-  <tr><td><code>web</code></td><td><img alt="Stack web" src="https://skillicons.dev/icons?i=html,css,js,ts,react&theme=dark" /></td></tr>
-  <tr><td><code>backend</code></td><td><img alt="Stack backend" src="https://skillicons.dev/icons?i=python,flask,nodejs,express&theme=dark" /></td></tr>
-  <tr><td><code>data</code></td><td><img alt="Stack data" src="https://skillicons.dev/icons?i=postgres,supabase&theme=dark" /></td></tr>
-  <tr><td><code>infra</code></td><td><img alt="Infrastruktur dan perangkat" src="https://skillicons.dev/icons?i=docker,cloudflare,vercel,git,github,githubactions,linux&theme=dark" /></td></tr>
+  <tr><td><code>mobile</code></td><td><img alt="Stack mobile" src="https://skillicons.dev/icons?i=kotlin,androidstudio,flutter,dart&amp;theme=dark" /></td></tr>
+  <tr><td><code>web</code></td><td><img alt="Stack web" src="https://skillicons.dev/icons?i=html,css,js,ts,react&amp;theme=dark" /></td></tr>
+  <tr><td><code>backend</code></td><td><img alt="Stack backend" src="https://skillicons.dev/icons?i=python,flask,nodejs,express&amp;theme=dark" /></td></tr>
+  <tr><td><code>data</code></td><td><img alt="Stack data" src="https://skillicons.dev/icons?i=postgres,supabase&amp;theme=dark" /></td></tr>
+  <tr><td><code>infra</code></td><td><img alt="Infrastruktur dan perangkat" src="https://skillicons.dev/icons?i=docker,cloudflare,vercel,git,github,githubactions,linux&amp;theme=dark" /></td></tr>
 </table>
 
-<a id="github-analytics"></a>
+<a id="collaboration"></a>
+
+<h3 align="center">~/kolaborasi &amp; terhubung</h3>
 
 <div align="center">
-## ~/analytics
-
-<img width="640" alt="" src="assets/line.svg" />
-</div>
-
-<div align="center">
-<!--
-<img width="49%" alt="Statistik GitHub" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kiisafezone&theme=tokyonight" />
-<img width="49%" alt="Bahasa teratas" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kiisafezone&theme=tokyonight" />
--->
-</div>
-
-<a name="collaboration"></a>
-
-<div align="center">
-## ~/collaboration & connect with me
-
 <img width="640" alt="" src="assets/line.svg" />
 </div>
 
@@ -114,9 +99,9 @@ Saya terbuka untuk kolaborasi terarah membuat perangkat open-source, software ya
 
 <a id="guestbook"></a>
 
-<div align="center">
-## ~/guestbook
+<h3 align="center">~/guestbook</h3>
 
+<div align="center">
 <img width="640" alt="" src="assets/line.svg" />
 </div>
 
@@ -134,4 +119,5 @@ Saya terbuka untuk kolaborasi terarah membuat perangkat open-source, software ya
 </div>
 
 <div align="center"><a href="#top"><img src="assets/id/footer-eof.svg" width="800" alt="Akhir berkas. Terus membangun, terus belajar, terus berbagi. Terima kasih sudah mampir."></a>
+<br />
 <a href="#top">↑ Kembali ke atas</a></div>
