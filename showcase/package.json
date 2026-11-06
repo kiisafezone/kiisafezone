@@ -1,0 +1,22 @@
+{
+  "name": "kiisafezone-readme-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cinematic Remotion showcase for the kiisafezone GitHub profile README",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "preview": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts ReadmeShowcase out/kiisafezone-showcase.mp4",
+    "still": "remotion still src/index.ts ReadmeShowcase out/preview.png"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.541",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.541"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}
