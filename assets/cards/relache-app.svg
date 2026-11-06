@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="190" viewBox="0 0 300 190" font-family="JetBrains Mono, SF Mono, Menlo, Consolas, monospace">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#020617"/><stop offset="0.55" stop-color="#0f1b4d"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.22"/><stop offset="1" stop-color="#fff" stop-opacity="0.05"/></linearGradient>
+<linearGradient id="ed" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.6"/><stop offset="1" stop-color="#fff" stop-opacity="0.1"/></linearGradient>
+<linearGradient id="sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="ic" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#0284c7"/></linearGradient>
+<filter id="bl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
+<clipPath id="rd"><rect width="300" height="190" rx="16"/></clipPath>
+<clipPath id="br"><rect x="16" y="146" width="268" height="6" rx="3"/></clipPath>
+</defs>
+<rect width="300" height="190" rx="16" fill="url(#bg)"/>
+<g clip-path="url(#rd)" filter="url(#bl)">
+<circle cx="40" cy="50" r="60" fill="#38bdf8" opacity="0.6"><animateTransform attributeName="transform" type="translate" values="0 0;40 30;0 0" dur="9s" repeatCount="indefinite"/></circle>
+<circle cx="270" cy="170" r="60" fill="#0284c7" opacity="0.5"><animateTransform attributeName="transform" type="translate" values="0 0;-40 -20;0 0" dur="11s" repeatCount="indefinite"/></circle>
+</g>
+<rect x="4" y="4" width="292" height="182" rx="12" fill="url(#gl)" stroke="url(#ed)" stroke-width="1.2"/>
+<path d="M4 30 V16 a12 12 0 0 1 12 -12 H284 a12 12 0 0 1 12 12 V30 Z" fill="#fff" fill-opacity="0.12"/>
+<line x1="4" y1="30" x2="296" y2="30" stroke="#fff" stroke-opacity="0.18"/>
+<circle cx="20" cy="17" r="4.5" fill="#ff5f57"/><circle cx="35" cy="17" r="4.5" fill="#febc2e"/><circle cx="50" cy="17" r="4.5" fill="#28c840"/>
+<text x="164.0" y="21" font-size="10" fill="#e2e8f0" fill-opacity="0.8" text-anchor="middle">relache-app</text>
+<rect x="0" y="0" width="70" height="2" fill="url(#sh)"><animateTransform attributeName="transform" type="translate" values="20 5;220 5" dur="3.5s" begin="1.8s" repeatCount="indefinite"/></rect>
+<rect x="16" y="42" width="34" height="34" rx="9" fill="url(#ic)"/>
+<text x="33" y="66" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">R</text>
+<text x="60" y="64" font-size="15" font-weight="700" fill="#fff">RELÂCHE</text>
+<text x="16" y="84" font-size="11" fill="#cbd5e1">Indonesia-first personal finance</text><text x="16" y="99" font-size="11" fill="#cbd5e1">platform for money management, expense</text><text x="16" y="114" font-size="11" fill="#cbd5e1">tracking, budgeting, and insights.</text>
+<rect x="16" y="146" width="268" height="6" rx="3" fill="#fff" fill-opacity="0.1"/>
+<g clip-path="url(#br)"><rect x="16.0" y="146" width="217.3" height="6" fill="#3178c6"/><rect x="233.3" y="146" width="49.0" height="6" fill="#336790"/><rect x="282.4" y="146" width="1.6" height="6" fill="#8b949e"/></g>
+<circle cx="19" cy="166" r="3" fill="#3178c6"/><text x="27" y="169" font-size="9.5" fill="#cbd5e1">TypeScript 81.1%</text><circle cx="138" cy="166" r="3" fill="#336790"/><text x="146" y="169" font-size="9.5" fill="#cbd5e1">PLpgSQL 18.3%</text>
+</svg>
