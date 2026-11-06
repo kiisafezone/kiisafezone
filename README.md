@@ -37,7 +37,7 @@
 <br /></div><a id="technology-stack"></a>
 
 <div align="left"><h2><code>kiisafezone:~$ stack</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
-  <img width="100%" alt="Animated technology stack: individual technologies travel upward and curve off to the left" src="assets/animated-stack.svg" />
+  <img width="100%" alt="Animated technology stack: category cards with existing Skill Icons scrolling from right to left" src="assets/animated-stack.svg" />
 </div><a id="github-analytics"></a>
 
 <div align="left"><h2><code>kiisafezone:~$ analytics</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center"><img width="49%" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kiisafezone&theme=tokyonight" />
