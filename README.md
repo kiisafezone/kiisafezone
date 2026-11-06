@@ -37,7 +37,7 @@
 <br /></div><a id="technology-stack"></a>
 
 <div align="left"><h2><code>kiisafezone:~$ stack</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
-  <img width="100%" alt="Technology and tool logos in an animated macOS glass grid" src="assets/animated-stack.svg" />
+  <img width="100%" alt="Technology and tool logos in an animated macOS glass grid" src="assets/animated-stack.embedded.svg" />
 </div>
 
 <a id="github-analytics"></a>
