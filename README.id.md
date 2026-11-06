@@ -74,13 +74,9 @@
 <img width="640" alt="" src="assets/line.svg" />
 </div>
 
-<table width="100%">
-  <tr><td><code>mobile</code></td><td><img alt="Stack mobile" src="https://skillicons.dev/icons?i=kotlin,androidstudio,flutter,dart&amp;theme=dark" /></td></tr>
-  <tr><td><code>web</code></td><td><img alt="Stack web" src="https://skillicons.dev/icons?i=html,css,js,ts,react&amp;theme=dark" /></td></tr>
-  <tr><td><code>backend</code></td><td><img alt="Stack backend" src="https://skillicons.dev/icons?i=python,flask,nodejs,express&amp;theme=dark" /></td></tr>
-  <tr><td><code>data</code></td><td><img alt="Stack data" src="https://skillicons.dev/icons?i=postgres,supabase&amp;theme=dark" /></td></tr>
-  <tr><td><code>infra</code></td><td><img alt="Infrastruktur dan perangkat" src="https://skillicons.dev/icons?i=docker,cloudflare,vercel,git,github,githubactions,linux&amp;theme=dark" /></td></tr>
-</table>
+<div align="center">
+<img width="100%" alt="Teknologi dan perangkat dalam kartu macOS Glass yang bergerak" src="assets/animated-stack.svg" />
+</div>
 
 <a id="collaboration"></a>
 
