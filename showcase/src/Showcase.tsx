@@ -24,7 +24,7 @@ const C = {
   border: "rgba(166, 190, 255, 0.22)",
 };
 
-const fadeUp = (frame: number, start = 0, duration = 24) => ({
+const fadeUp = (frame: number, start = 0, duration = 36) => ({
   opacity: interpolate(frame, [start, start + duration], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
@@ -120,7 +120,7 @@ const Intro: React.FC = () => {
 
 const HeaderScene: React.FC = () => {
   const f = useCurrentFrame();
-  const y = interpolate(f, [0, 130], [0, -115], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const y = interpolate(f, [0, 210], [0, -115], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
   return (
     <AbsoluteFill style={{ background: "linear-gradient(145deg, #0b1020, #111e3b)", alignItems: "center", paddingTop: 90 }}>
       <Glow x="50%" y="35%" size={850} />
@@ -188,7 +188,7 @@ const Projects: React.FC = () => {
             <SectionTitle command="projects" />
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18, marginTop: 20 }}>
               {cards.map((card, i) => (
-                <div key={card} style={{ gridColumn: i === 0 ? "span 2" : "span 1", borderRadius: 12, overflow: "hidden", opacity: interpolate(f, [i * 7, i * 7 + 18], [0, 1], { extrapolateRight: "clamp" }), transform: `translateY(${interpolate(f, [i * 7, i * 7 + 18], [22, 0], { extrapolateRight: "clamp" })}px)` }}>
+                <div key={card} style={{ gridColumn: i === 0 ? "span 2" : "span 1", borderRadius: 12, overflow: "hidden", opacity: interpolate(f, [i * 14, i * 14 + 30], [0, 1], { extrapolateRight: "clamp" }), transform: `translateY(${interpolate(f, [i * 14, i * 14 + 30], [22, 0], { extrapolateRight: "clamp" })}px)` }}>
                   <Img src={asset(card)} style={{ width: "100%", height: i === 0 ? 150 : 116, objectFit: "contain" }} />
                 </div>
               ))}
@@ -206,14 +206,14 @@ const Projects: React.FC = () => {
 
 const Tech: React.FC = () => {
   const f = useCurrentFrame();
-  const drift = interpolate(f, [0, 170], [0, -60], { extrapolateRight: "clamp" });
+  const drift = interpolate(f, [0, 260], [0, -45], { extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ background: "linear-gradient(145deg, #0b1020, #111d3a)", alignItems: "center", paddingTop: 72 }}>
       <Glow x="50%" y="48%" color="rgba(37,99,235,.22)" size={850} />
       <div style={{ position: "relative", ...fadeUp(f, 0, 28) }}>
         <Browser>
           <div style={{ padding: "42px 65px" }}>
-            <SectionTitle command="stack" />
+            <SectionTitle command="tech-tools" />
             <div style={{ marginTop: 20, overflow: "hidden", height: 550, display: "flex", alignItems: "center", justifyContent: "center" }}>
               <div style={{ transform: `translateY(${drift}px) scale(1.05)`, width: "100%" }}>
                 <Img src={asset("animated-stack.embedded.svg")} style={{ width: "100%", height: 520, objectFit: "contain" }} />
@@ -250,11 +250,11 @@ const Closing: React.FC = () => {
 
 export const ReadmeShowcase: React.FC = () => {
   const frame = useCurrentFrame();
-  const cuts = [150, 330, 510, 690, 900, 1110];
+  const cuts = [180, 450, 690, 930, 1230, 1530];
   const transitionOpacity = Math.max(
     0,
     ...cuts.map((cut) =>
-      interpolate(frame, [cut - 8, cut, cut + 8], [0, 1, 0], {
+      interpolate(frame, [cut - 18, cut, cut + 18], [0, 1, 0], {
         extrapolateLeft: "clamp",
         extrapolateRight: "clamp",
       }),
@@ -263,13 +263,13 @@ export const ReadmeShowcase: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: C.ink, fontFamily: "Inter, Arial, sans-serif", overflow: "hidden" }}>
-      <Sequence from={0} durationInFrames={150}><Intro /></Sequence>
-      <Sequence from={150} durationInFrames={180}><HeaderScene /></Sequence>
-      <Sequence from={330} durationInFrames={180}><AboutApproach /></Sequence>
-      <Sequence from={510} durationInFrames={180}><AboutApproach approach /></Sequence>
-      <Sequence from={690} durationInFrames={210}><Projects /></Sequence>
-      <Sequence from={900} durationInFrames={210}><Tech /></Sequence>
-      <Sequence from={1110} durationInFrames={240}><Closing /></Sequence>
+      <Sequence from={0} durationInFrames={180}><Intro /></Sequence>
+      <Sequence from={180} durationInFrames={270}><HeaderScene /></Sequence>
+      <Sequence from={450} durationInFrames={240}><AboutApproach /></Sequence>
+      <Sequence from={690} durationInFrames={240}><AboutApproach approach /></Sequence>
+      <Sequence from={930} durationInFrames={300}><Projects /></Sequence>
+      <Sequence from={1230} durationInFrames={300}><Tech /></Sequence>
+      <Sequence from={1530} durationInFrames={270}><Closing /></Sequence>
       <AbsoluteFill style={{ backgroundColor: "#050816", opacity: transitionOpacity, pointerEvents: "none" }} />
     </AbsoluteFill>
   );
