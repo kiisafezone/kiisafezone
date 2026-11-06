@@ -1,0 +1,28 @@
+name: Guestbook
+description: Say hello, share what you're building, or leave a note.
+title: "[guestbook] "
+labels: ["guestbook"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Entries are public issues on this repository. Please don't include private information.
+  - type: input
+    id: name
+    attributes:
+      label: Name or handle
+      placeholder: How should I address you?
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: A hello, feedback, or what you're building.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link (optional)
+      placeholder: https://
