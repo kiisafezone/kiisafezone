@@ -75,7 +75,7 @@
 </div>
 
 <div align="center">
-<img width="100%" alt="Teknologi dan perangkat dalam kartu macOS Glass yang bergerak" src="assets/animated-stack.svg" />
+<img width="100%" alt="Teknologi dan perangkat dalam kartu macOS Glass yang bergerak" src="assets/animated-stack.embedded.svg" />
 </div>
 
 <a id="collaboration"></a>
