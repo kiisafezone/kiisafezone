@@ -18,15 +18,15 @@
   <a href="#guestbook"><img src="https://img.shields.io/badge/GUESTBOOK-2563eb?style=flat-square" alt="Guestbook" /></a>
 </p><img width="100%" alt="" src="assets/divider.svg" /></div><a id="about"></a>
 
-<div align="center"><h2><code>kiisafezone:~$ about</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
+<div align="left"><h2><code>kiisafezone:~$ about</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
   <img width="640" alt="Terminal animation: whoami, cat about.py" src="assets/about-typing.svg" />
 </div><a id="approach"></a>
 
-<div align="center"><h2><code>kiisafezone:~$ approach</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
+<div align="left"><h2><code>kiisafezone:~$ approach</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
   <img width="640" alt="Approach pipeline: research, design, build, audit, validate, improve" src="assets/approach.svg" />
 </div><br /><a id="projects"></a>
 
-<div align="center"><h2><code>kiisafezone:~$ projects</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center"><a href="https://github.com/kiisafezone/aisa-OopsAllBugs"><img width="98%" alt="AISA: OopsAllBugs, Advanced Intelligent Source-code Auditor" src="assets/cards/aisa-oopsallbugs.svg" /></a>
+<div align="left"><h2><code>kiisafezone:~$ projects</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center"><a href="https://github.com/kiisafezone/aisa-OopsAllBugs"><img width="98%" alt="AISA: OopsAllBugs, Advanced Intelligent Source-code Auditor" src="assets/cards/aisa-oopsallbugs.svg" /></a>
 
 <a href="https://github.com/kiisafezone/usahaos"><img width="49%" alt="UsahaOS" src="assets/cards/usahaos.svg" /></a>
 <a href="https://github.com/kiisafezone/larashris"><img width="49%" alt="LarasHRIS" src="assets/cards/larashris.svg" /></a>
@@ -36,7 +36,7 @@
 
 <br /></div><a id="technology-stack"></a>
 
-<div align="center"><h2><code>kiisafezone:~$ stack</code></h2><img width="640" alt="" src="assets/line.svg" /></div><table width="100%">
+<div align="left"><h2><code>kiisafezone:~$ stack</code></h2><img width="640" alt="" src="assets/line.svg" /></div><table width="100%">
   <tr>
     <td><code>mobile</code></td>
     <td><img alt="Mobile stack" src="https://skillicons.dev/icons?i=kotlin,androidstudio,flutter,dart&theme=dark" /></td>
@@ -59,17 +59,17 @@
   </tr>
 </table><a id="github-analytics"></a>
 
-<div align="center"><h2><code>kiisafezone:~$ analytics</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center"><img width="49%" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kiisafezone&theme=tokyonight" />
+<div align="left"><h2><code>kiisafezone:~$ analytics</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center"><img width="49%" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kiisafezone&theme=tokyonight" />
 <img width="49%" alt="Top languages" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=kiisafezone&theme=tokyonight" /></div><a name="collaboration"></a>
 
-<div align="center"><h2><code>kiisafezone:~$ connect</code></h2><img width="640" alt="" src="assets/line.svg" /></div>I welcome focused collaborations on open-source tools, secure software, and practical automation.
+<div align="left"><h2><code>kiisafezone:~$ connect</code></h2><img width="640" alt="" src="assets/line.svg" /></div>I welcome focused collaborations on open-source tools, secure software, and practical automation.
 
 <div align="center"><a href="https://github.com/kiisafezone"><img alt="Connect on GitHub" src="assets/btn-github.svg" /></a>
 <a href="https://github.com/kiisafezone?tab=repositories"><img alt="All repositories" src="assets/btn-repos.svg" /></a>
 
 </div><a id="guestbook"></a>
 
-<div align="center"><h2><code>kiisafezone:~$ guestbook</code></h2><img width="640" alt="" src="assets/line.svg" /></div># Drop a hello, share what you're building, or leave a note.
+<div align="left"><h2><code>kiisafezone:~$ guestbook</code></h2><img width="640" alt="" src="assets/line.svg" /></div># Drop a hello, share what you're building, or leave a note.
 # Each entry opens a public issue on this repo.
 
 <div align="center"><a href="https://github.com/kiisafezone/kiisafezone/issues/new?template=guestbook.yml"><img alt="Leave a note" src="assets/btn-note.svg" /></a>
