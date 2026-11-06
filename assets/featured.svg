@@ -1,60 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="470" viewBox="0 0 640 470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="538" viewBox="0 0 600 538" font-family="Segoe UI, Helvetica, Arial, sans-serif">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#020617"/>
-      <stop offset="0.5" stop-color="#172554"/>
+      <stop offset="0.55" stop-color="#0f1b4d"/>
       <stop offset="1" stop-color="#1e3a8a"/>
     </linearGradient>
     <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.04"/>
     </linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="gv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="gc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0891b2"/>
     </linearGradient>
     <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="35"/>
+      <feGaussianBlur stdDeviation="40"/>
     </filter>
     <clipPath id="round">
-      <rect width="640" height="470" rx="24"/>
+      <rect width="600" height="538" rx="28"/>
     </clipPath>
   </defs>
 
-  <rect width="640" height="470" rx="24" fill="url(#bg)"/>
+  <rect width="600" height="538" rx="28" fill="url(#bg)"/>
   <g clip-path="url(#round)" filter="url(#blur)">
-    <circle cx="110" cy="70" r="90" fill="#2563eb" opacity="0.6"/>
-    <circle cx="540" cy="210" r="110" fill="#7c3aed" opacity="0.5"/>
-    <circle cx="190" cy="430" r="100" fill="#06b6d4" opacity="0.4"/>
-    <circle cx="570" cy="440" r="80" fill="#2563eb" opacity="0.5"/>
+    <circle cx="50" cy="70" r="110" fill="#3b82f6" opacity="0.65"/>
+    <circle cx="560" cy="280" r="120" fill="#8b5cf6" opacity="0.55"/>
+    <circle cx="60" cy="470" r="110" fill="#06b6d4" opacity="0.5"/>
+    <circle cx="540" cy="510" r="90" fill="#2563eb" opacity="0.5"/>
   </g>
 
   <!-- Card 1: UsahaOS -->
-  <rect x="20" y="20" width="600" height="130" rx="20" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.5"/>
-  <text x="44" y="62" font-size="22" font-weight="700" fill="#ffffff">📱 UsahaOS</text>
-  <text x="44" y="90" font-size="14" fill="#cbd5e1">Android app for Indonesian small businesses (UMKM).</text>
-  <rect x="44" y="108" width="76" height="24" rx="12" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3"/>
-  <text x="82" y="125" font-size="12" fill="#e2e8f0" text-anchor="middle">Android</text>
-  <rect x="128" y="108" width="58" height="24" rx="12" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3"/>
-  <text x="157" y="125" font-size="12" fill="#e2e8f0" text-anchor="middle">Room</text>
+  <rect x="24" y="24" width="552" height="150" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.5"/>
+  <line x1="46" y1="25" x2="554" y2="25" stroke="#ffffff" stroke-opacity="0.4"/>
+  <circle cx="76" cy="99" r="30" fill="url(#gb)"/>
+  <text x="76" y="109" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">U</text>
+  <text x="124" y="82" font-size="26" font-weight="700" fill="#ffffff">UsahaOS</text>
+  <text x="124" y="110" font-size="15" fill="#cbd5e1">Android app for Indonesian small businesses (UMKM).</text>
+  <rect x="124" y="128" width="77" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.35"/>
+  <text x="162.5" y="147" font-size="13" fill="#e2e8f0" text-anchor="middle">Android</text>
+  <rect x="209" y="128" width="54" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.35"/>
+  <text x="236" y="147" font-size="13" fill="#e2e8f0" text-anchor="middle">Room</text>
 
   <!-- Card 2: LarasHRIS -->
-  <rect x="20" y="170" width="600" height="130" rx="20" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.5"/>
-  <text x="44" y="212" font-size="22" font-weight="700" fill="#ffffff">🏢 LarasHRIS</text>
-  <text x="44" y="240" font-size="14" fill="#cbd5e1">Integrated Human Resource Information System.</text>
-  <rect x="44" y="258" width="76" height="24" rx="12" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3"/>
-  <text x="82" y="275" font-size="12" fill="#e2e8f0" text-anchor="middle">Express</text>
-  <rect x="128" y="258" width="94" height="24" rx="12" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3"/>
-  <text x="175" y="275" font-size="12" fill="#e2e8f0" text-anchor="middle">TypeScript</text>
-  <rect x="230" y="258" width="82" height="24" rx="12" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3"/>
-  <text x="271" y="275" font-size="12" fill="#e2e8f0" text-anchor="middle">Supabase</text>
-  <rect x="320" y="258" width="94" height="24" rx="12" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3"/>
-  <text x="367" y="275" font-size="12" fill="#e2e8f0" text-anchor="middle">PostgreSQL</text>
+  <rect x="24" y="194" width="552" height="150" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.5"/>
+  <line x1="46" y1="195" x2="554" y2="195" stroke="#ffffff" stroke-opacity="0.4"/>
+  <circle cx="76" cy="269" r="30" fill="url(#gv)"/>
+  <text x="76" y="279" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">L</text>
+  <text x="124" y="252" font-size="26" font-weight="700" fill="#ffffff">LarasHRIS</text>
+  <text x="124" y="280" font-size="15" fill="#cbd5e1">Integrated Human Resource Information System.</text>
+  <rect x="124" y="298" width="77" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.35"/>
+  <text x="162.5" y="317" font-size="13" fill="#e2e8f0" text-anchor="middle">Express</text>
+  <rect x="209" y="298" width="99" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.35"/>
+  <text x="258.5" y="317" font-size="13" fill="#e2e8f0" text-anchor="middle">TypeScript</text>
+  <rect x="316" y="298" width="84" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.35"/>
+  <text x="358" y="317" font-size="13" fill="#e2e8f0" text-anchor="middle">Supabase</text>
+  <rect x="408" y="298" width="99" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.35"/>
+  <text x="457.5" y="317" font-size="13" fill="#e2e8f0" text-anchor="middle">PostgreSQL</text>
 
-  <!-- Card 3: RELÂCHE -->
-  <rect x="20" y="320" width="600" height="130" rx="20" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.5"/>
-  <text x="44" y="362" font-size="22" font-weight="700" fill="#ffffff">🌿 RELÂCHE</text>
-  <text x="44" y="390" font-size="14" fill="#cbd5e1">Indonesia-first personal finance application.</text>
-  <rect x="44" y="408" width="139" height="24" rx="12" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.3"/>
-  <text x="113" y="425" font-size="12" fill="#e2e8f0" text-anchor="middle">Personal Finance</text>
+  <!-- Card 3: RELACHE -->
+  <rect x="24" y="364" width="552" height="150" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.5"/>
+  <line x1="46" y1="365" x2="554" y2="365" stroke="#ffffff" stroke-opacity="0.4"/>
+  <circle cx="76" cy="439" r="30" fill="url(#gc)"/>
+  <text x="76" y="449" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">R</text>
+  <text x="124" y="422" font-size="26" font-weight="700" fill="#ffffff">RELÂCHE</text>
+  <text x="124" y="450" font-size="15" fill="#cbd5e1">Indonesia-first personal finance application.</text>
+  <rect x="124" y="468" width="144" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.35"/>
+  <text x="196" y="487" font-size="13" fill="#e2e8f0" text-anchor="middle">Personal Finance</text>
 </svg>
