@@ -1,420 +1,197 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 135" width="100%" height="135" role="img" aria-labelledby="title desc">
-<title id="title">Technologies and tools</title>
-<desc id="desc">Animated macOS glass cards with logos for 25 technologies and development tools.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 1115" width="100%" role="img" aria-labelledby="title desc">
+<title id="title">Technology and tools</title>
+<desc id="desc">A fixed four-column macOS Glass grid showing 25 technology and development tool logos.</desc>
 <defs>
- <linearGradient id="macBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="55%" stop-color="#0a1740"/><stop offset="100%" stop-color="#172554"/></linearGradient>
- <linearGradient id="glassFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fff" stop-opacity=".15"/><stop offset="100%" stop-color="#fff" stop-opacity=".04"/></linearGradient>
- <linearGradient id="glassBorder" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#fff" stop-opacity=".4"/><stop offset="100%" stop-color="#3b82f6" stop-opacity=".3"/></linearGradient>
- <radialGradient id="blueOrb"><stop offset="0%" stop-color="#3b82f6" stop-opacity=".3"/><stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
- <radialGradient id="purpleOrb"><stop offset="0%" stop-color="#7c3aed" stop-opacity=".2"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+ <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101d3b"/><stop offset="1" stop-color="#07132f"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#273653" stop-opacity=".9"/><stop offset="1" stop-color="#1b2944" stop-opacity=".95"/></linearGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9fb8e8" stop-opacity=".28"/><stop offset="1" stop-color="#c5d7ff" stop-opacity=".13"/></linearGradient>
+ <radialGradient id="ambient"><stop offset="0" stop-color="#4775d1" stop-opacity=".2"/><stop offset="1" stop-color="#4775d1" stop-opacity="0"/></radialGradient>
  <style>
-  .track{animation:marquee 100s linear infinite}
-  .card{transform-box:fill-box;transform-origin:center;animation:float 3.8s ease-in-out infinite}
-  .card:nth-child(2n){animation-delay:-1.9s}
-  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-3875px)}}
-  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
-  @media(prefers-reduced-motion:reduce){.track,.card{animation:none}}
+ .card{opacity:0;animation:cardIn .65s cubic-bezier(.2,.75,.25,1) forwards;animation-delay:calc(var(--i)*65ms)}
+ .card image{transform-box:fill-box;transform-origin:center;animation:logoGlow 3.8s ease-in-out infinite;animation-delay:calc(var(--i)*90ms)}
+ @keyframes cardIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+ @keyframes logoGlow{0%,100%{filter:drop-shadow(0 0 0px #8bbcff);opacity:.9}50%{filter:drop-shadow(0 0 5px #8bbcff);opacity:1}}
+ @media(prefers-reduced-motion:reduce){.card,.card image{animation:none;opacity:1}}
  </style>
 </defs>
-<rect width="800" height="135" rx="16" fill="url(#macBg)"/>
-<circle cx="150" cy="80" r="100" fill="url(#blueOrb)"/><circle cx="600" cy="50" r="120" fill="url(#purpleOrb)"/>
-<g class="track"><g class="card"><g transform="translate(20 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/kotlin/7F52FF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Kotlin</text>
+<rect width="800" height="1115" rx="34" fill="url(#background)"/>
+<circle cx="125" cy="230" r="240" fill="url(#ambient)"/><circle cx="710" cy="850" r="260" fill="url(#ambient)"/>
+<rect x="28" y="26" width="110" height="40" rx="20" fill="#dbeafe" opacity=".12" stroke="#cbd5e1" stroke-opacity=".15"/>
+<text x="83" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#e2e8f0">macOS Glass</text>
+<text x="158" y="51" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2" fill="#cbd5e1">TECHNOLOGIES &amp; TOOLS</text>
+<g class="card" style="--i:0" transform="translate(28 84)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/kotlin/7F52FF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Kotlin</text>
  </g>
-<g transform="translate(175 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/androidstudio/3DDC84" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#fff">Android Studio</text>
+<g class="card" style="--i:1" transform="translate(218 84)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/androidstudio/3DDC84" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">Android Studio</text>
  </g>
-<g transform="translate(330 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/flutter/54C5F8" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Flutter</text>
+<g class="card" style="--i:2" transform="translate(408 84)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/flutter/54C5F8" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Flutter</text>
  </g>
-<g transform="translate(485 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/dart/0175C2" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Dart</text>
+<g class="card" style="--i:3" transform="translate(598 84)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/dart/0175C2" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Dart</text>
  </g>
-<g transform="translate(640 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/html5/E34F26" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">HTML5</text>
+<g class="card" style="--i:4" transform="translate(28 229)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/html5/E34F26" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">HTML5</text>
  </g>
-<g transform="translate(795 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/css/1572B6" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">CSS3</text>
+<g class="card" style="--i:5" transform="translate(218 229)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/css/1572B6" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">CSS3</text>
  </g>
-<g transform="translate(950 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/javascript/F7DF1E" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">JavaScript</text>
+<g class="card" style="--i:6" transform="translate(408 229)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/javascript/F7DF1E" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">JavaScript</text>
  </g>
-<g transform="translate(1105 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/typescript/3178C6" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">TypeScript</text>
+<g class="card" style="--i:7" transform="translate(598 229)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/typescript/3178C6" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">TypeScript</text>
  </g>
-<g transform="translate(1260 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/react/61DAFB" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">React</text>
+<g class="card" style="--i:8" transform="translate(28 374)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/react/61DAFB" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">React</text>
  </g>
-<g transform="translate(1415 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/python/3776AB" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Python</text>
+<g class="card" style="--i:9" transform="translate(218 374)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/python/3776AB" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Python</text>
  </g>
-<g transform="translate(1570 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/flask/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Flask</text>
+<g class="card" style="--i:10" transform="translate(408 374)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/flask/FFFFFF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Flask</text>
  </g>
-<g transform="translate(1725 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/nodedotjs/5FA04E" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Node.js</text>
+<g class="card" style="--i:11" transform="translate(598 374)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/nodedotjs/5FA04E" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Node.js</text>
  </g>
-<g transform="translate(1880 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/express/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Express.js</text>
+<g class="card" style="--i:12" transform="translate(28 519)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/express/FFFFFF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Express.js</text>
  </g>
-<g transform="translate(2035 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/postgresql/4169E1" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">PostgreSQL</text>
+<g class="card" style="--i:13" transform="translate(218 519)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/postgresql/4169E1" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">PostgreSQL</text>
  </g>
-<g transform="translate(2190 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/supabase/3FCF8E" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Supabase</text>
+<g class="card" style="--i:14" transform="translate(408 519)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/supabase/3FCF8E" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Supabase</text>
  </g>
-<g transform="translate(2345 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/docker/2496ED" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Docker</text>
+<g class="card" style="--i:15" transform="translate(598 519)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/docker/2496ED" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Docker</text>
  </g>
-<g transform="translate(2500 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/cloudflare/F38020" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Cloudflare</text>
+<g class="card" style="--i:16" transform="translate(28 664)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/cloudflare/F38020" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Cloudflare</text>
  </g>
-<g transform="translate(2655 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/vercel/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Vercel</text>
+<g class="card" style="--i:17" transform="translate(218 664)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/vercel/FFFFFF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Vercel</text>
  </g>
-<g transform="translate(2810 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/git/F05032" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Git</text>
+<g class="card" style="--i:18" transform="translate(408 664)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/git/F05032" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Git</text>
  </g>
-<g transform="translate(2965 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/github/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">GitHub</text>
+<g class="card" style="--i:19" transform="translate(598 664)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/github/FFFFFF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">GitHub</text>
  </g>
-<g transform="translate(3120 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/githubactions/2088FF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#fff">GitHub Actions</text>
+<g class="card" style="--i:20" transform="translate(28 809)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/githubactions/2088FF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">GitHub Actions</text>
  </g>
-<g transform="translate(3275 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/githubcopilot/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#fff">GitHub Copilot</text>
+<g class="card" style="--i:21" transform="translate(218 809)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/githubcopilot/FFFFFF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">GitHub Copilot</text>
  </g>
-<g transform="translate(3430 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/github/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#fff">GitHub Codespaces</text>
+<g class="card" style="--i:22" transform="translate(408 809)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/github/FFFFFF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#F8FAFC">GitHub Codespaces</text>
  </g>
-<g transform="translate(3585 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/linux/FCC624" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Linux</text>
+<g class="card" style="--i:23" transform="translate(598 809)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/linux/FCC624" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Linux</text>
  </g>
-<g transform="translate(3740 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/gnometerminal/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Terminal</text>
- </g></g><g class="card" transform="translate(3875 0)"><g transform="translate(20 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/kotlin/7F52FF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Kotlin</text>
+<g class="card" style="--i:24" transform="translate(28 954)">
+ <rect x="2" y="5" width="166" height="112" rx="22" fill="#000" opacity=".24"/>
+ <rect width="166" height="112" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/>
+ <path d="M22 1H144Q165 1 165 22V37H1V22Q1 1 22 1Z" fill="#fff" opacity=".045"/>
+ <image href="https://cdn.simpleicons.org/gnometerminal/FFFFFF" x="65" y="22" width="36" height="36" preserveAspectRatio="xMidYMid meet"/>
+ <text x="83" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Terminal</text>
  </g>
-<g transform="translate(175 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/androidstudio/3DDC84" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#fff">Android Studio</text>
- </g>
-<g transform="translate(330 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/flutter/54C5F8" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Flutter</text>
- </g>
-<g transform="translate(485 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/dart/0175C2" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Dart</text>
- </g>
-<g transform="translate(640 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/html5/E34F26" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">HTML5</text>
- </g>
-<g transform="translate(795 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/css/1572B6" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">CSS3</text>
- </g>
-<g transform="translate(950 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/javascript/F7DF1E" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">JavaScript</text>
- </g>
-<g transform="translate(1105 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/typescript/3178C6" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">TypeScript</text>
- </g>
-<g transform="translate(1260 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/react/61DAFB" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">React</text>
- </g>
-<g transform="translate(1415 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/python/3776AB" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Python</text>
- </g>
-<g transform="translate(1570 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/flask/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Flask</text>
- </g>
-<g transform="translate(1725 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/nodedotjs/5FA04E" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Node.js</text>
- </g>
-<g transform="translate(1880 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/express/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Express.js</text>
- </g>
-<g transform="translate(2035 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/postgresql/4169E1" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">PostgreSQL</text>
- </g>
-<g transform="translate(2190 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/supabase/3FCF8E" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Supabase</text>
- </g>
-<g transform="translate(2345 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/docker/2496ED" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Docker</text>
- </g>
-<g transform="translate(2500 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/cloudflare/F38020" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Cloudflare</text>
- </g>
-<g transform="translate(2655 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/vercel/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Vercel</text>
- </g>
-<g transform="translate(2810 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/git/F05032" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Git</text>
- </g>
-<g transform="translate(2965 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/github/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">GitHub</text>
- </g>
-<g transform="translate(3120 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/githubactions/2088FF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#fff">GitHub Actions</text>
- </g>
-<g transform="translate(3275 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/githubcopilot/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="600" fill="#fff">GitHub Copilot</text>
- </g>
-<g transform="translate(3430 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/github/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#fff">GitHub Codespaces</text>
- </g>
-<g transform="translate(3585 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/linux/FCC624" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Linux</text>
- </g>
-<g transform="translate(3740 20)">
-  <rect x="2" y="5" width="135" height="95" fill="#000" fill-opacity=".28" rx="12"/>
-  <rect width="135" height="95" fill="url(#glassFill)" stroke="url(#glassBorder)" stroke-width="1.2" rx="12"/>
-  <path d="M12 1H123Q134 1 134 12V30H1V12Q1 1 12 1Z" fill="#fff" fill-opacity=".055"/>
-  <circle cx="15" cy="15" r="4" fill="#ff5f57"/><circle cx="27" cy="15" r="4" fill="#febc2e"/><circle cx="39" cy="15" r="4" fill="#28c840"/>
-  <g class="logo"><image href="https://cdn.simpleicons.org/gnometerminal/FFFFFF" x="51" y="34" width="33" height="33" preserveAspectRatio="xMidYMid meet"/></g>
-  <text x="67.5" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="600" fill="#fff">Terminal</text>
- </g></g></g>
 </svg>
