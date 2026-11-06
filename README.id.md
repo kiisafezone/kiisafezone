@@ -6,15 +6,23 @@
   <a href="README.id.md">
     <img src="https://img.shields.io/badge/Bahasa_Indonesia-2563eb?style=flat-square&logo=github&logoColor=white" alt="Bahasa Indonesia" />
   </a>
-  <p align="center">
+  <img width="100%" alt="" src="assets/divider.svg" />
+
+<h2 align="center">Daftar Isi</h2>
+
+<p align="center">
   <a href="#about"><img src="assets/id/nav/tentang.svg" alt="Tentang" /></a>
   <a href="#approach"><img src="assets/id/nav/pendekatan.svg" alt="Pendekatan" /></a>
   <a href="#projects"><img src="assets/id/nav/proyek.svg" alt="Proyek" /></a>
   <a href="#technology-stack"><img src="assets/id/nav/tech-tools.svg" alt="Teknologi dan perangkat" /></a>
+</p>
+<p align="center">
   <a href="#github-analytics"><img src="assets/id/nav/statistik.svg" alt="Statistik GitHub" /></a>
   <a href="#collaboration"><img src="assets/id/nav/kolaborasi.svg" alt="Kolaborasi" /></a>
   <a href="#guestbook"><img src="assets/id/nav/guestbook.svg" alt="Guestbook" /></a>
-</p><img width="100%" alt="" src="assets/divider.svg" /></div><a id="about"></a>
+</p>
+
+<img width="100%" alt="" src="assets/divider.svg" /></div><a id="about"></a>
 
 <div align="left"><h2><code>kiisafezone:~$ about</code></h2><img width="640" alt="" src="assets/line.svg" /></div><div align="center">
   <img width="640" alt="Animasi terminal: whoami, cat about.py. Pengembang software independen dan kreator open-source: pengembangan full-stack dan Android, keamanan aplikasi dan audit kode, otomasi berbantuan AI, kualitas software dan arsitektur. Berbahasa Indonesia (penutur asli) dan Inggris." src="assets/id/about-typing.svg" />
