@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1920" viewBox="0 0 1080 1920">
+<title>kiisafezone — macOS README showcase mockup</title>
+<defs>
+  <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07122f"/><stop offset=".48" stop-color="#102b68"/><stop offset="1" stop-color="#080d20"/></linearGradient>
+  <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#26334d"/><stop offset="1" stop-color="#151e32"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111f3c"/><stop offset="1" stop-color="#0b1429"/></linearGradient>
+  <linearGradient id="active" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="28"/></filter>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12"/></filter>
+  <clipPath id="windowClip"><rect x="26" y="245" width="1028" height="1430" rx="26"/></clipPath>
+</defs>
+<rect width="1080" height="1920" fill="url(#wall)"/>
+<circle cx="930" cy="180" r="360" fill="#5b5ce2" opacity=".23" filter="url(#soft)"/>
+<circle cx="110" cy="1660" r="370" fill="#2563eb" opacity=".22" filter="url(#soft)"/>
+<path d="M0 0H1080V190C850 340 630 300 440 420S120 560 0 470Z" fill="#3b82f6" opacity=".08"/>
+<rect x="30" y="252" width="1020" height="1430" rx="28" fill="#020617" opacity=".7" filter="url(#shadow)"/>
+<rect x="26" y="245" width="1028" height="1430" rx="26" fill="#0b1222" stroke="#8da8df" stroke-opacity=".65" stroke-width="2"/>
+<g clip-path="url(#windowClip)">
+  <!-- 1. macOS browser frame: static -->
+  <rect x="26" y="245" width="1028" height="94" fill="url(#chrome)"/>
+  <path d="M26 339H1054" stroke="#9fb4dc" stroke-opacity=".24"/>
+  <circle cx="62" cy="278" r="10" fill="#ff5f57"/><circle cx="94" cy="278" r="10" fill="#febc2e"/><circle cx="126" cy="278" r="10" fill="#28c840"/>
+  <rect x="165" y="260" width="340" height="48" rx="13" fill="#34425d"/>
+  <circle cx="192" cy="284" r="11" fill="#f8fafc"/><text x="192" y="289" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#172033">●</text>
+  <text x="216" y="290" font-family="Arial,sans-serif" font-size="17" fill="#f1f5f9">kiisafezone · GitHub</text>
+  <path d="M475 278l12 12m0-12l-12 12" stroke="#cbd5e1" stroke-width="1.8"/>
+  <path d="M535 270v28m-14-14h28" stroke="#aebbd2" stroke-width="2"/>
+  <rect x="185" y="348" width="710" height="46" rx="23" fill="#0d172b" stroke="#667a9f" stroke-opacity=".35"/>
+  <path d="M207 371h-10m5-5l-5 5 5 5" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M239 371h14m-5-5l5 5-5 5" fill="none" stroke="#8392ad" stroke-width="2"/>
+  <path d="M280 363a9 9 0 1 0 8 15m-8-18v7h7" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="318" y="378" font-family="Arial,sans-serif" font-size="17" fill="#cbd5e1">github.com/kiisafezone/kiisafezone</text>
+  <path d="M925 364l8 15 8-15-8 4Z" fill="none" stroke="#cbd5e1" stroke-width="1.7"/>
+  <circle cx="982" cy="371" r="12" fill="#8ea6d6"/><circle cx="982" cy="367" r="4" fill="#1d2940"/><path d="M974 379q8-12 16 0" fill="#1d2940"/>
+  <!-- 2. GitHub global header: static -->
+  <rect x="26" y="405" width="1028" height="76" fill="#101827"/>
+  <circle cx="68" cy="443" r="22" fill="#f8fafc"/><text x="68" y="451" text-anchor="middle" font-family="Arial" font-size="26" font-weight="bold" fill="#111827">●</text>
+  <text x="112" y="449" font-family="Arial,sans-serif" font-size="17" fill="#e2e8f0">Product⌄</text>
+  <text x="224" y="449" font-family="Arial,sans-serif" font-size="17" fill="#e2e8f0">Solutions⌄</text>
+  <text x="348" y="449" font-family="Arial,sans-serif" font-size="17" fill="#e2e8f0">Resources⌄</text>
+  <text x="492" y="449" font-family="Arial,sans-serif" font-size="17" fill="#e2e8f0">Open Source⌄</text>
+  <rect x="770" y="423" width="210" height="40" rx="9" fill="#17243a" stroke="#64748b" stroke-opacity=".45"/>
+  <circle cx="792" cy="443" r="7" fill="none" stroke="#a8b6ce" stroke-width="1.6"/><path d="M797 448l5 5" stroke="#a8b6ce" stroke-width="1.6"/>
+  <text x="812" y="449" font-family="Arial,sans-serif" font-size="14" fill="#94a3b8">Search GitHub</text>
+  <circle cx="1010" cy="443" r="16" fill="#647da9"/>
+  <!-- 3. README / repository header: static -->
+  <rect x="26" y="481" width="1028" height="126" fill="#0d172b"/>
+  <text x="66" y="526" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#e2e8f0">kiisafezone <tspan fill="#94a3b8">/</tspan> kiisafezone</text>
+  <rect x="424" y="498" width="76" height="26" rx="13" fill="none" stroke="#7184a8" stroke-opacity=".7"/>
+  <text x="462" y="516" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#aab8d0">Public</text>
+  <path d="M52 563H1028" stroke="#64748b" stroke-opacity=".32"/>
+  <text x="68" y="590" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Code</text>
+  <text x="166" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Issues</text>
+  <text x="268" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Pull requests</text>
+  <text x="420" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Actions</text>
+  <text x="516" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Projects</text>
+  <text x="628" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Security</text>
+  <path d="M55 606H119" stroke="#60a5fa" stroke-width="3"/>
+  <!-- 3b. README file header: static -->
+  <rect x="48" y="620" width="984" height="48" rx="8" fill="#111d33" stroke="#64748b" stroke-opacity=".28"/>
+  <circle cx="72" cy="644" r="8" fill="none" stroke="#93a4c4" stroke-width="1.5"/>
+  <path d="M68 644h8m-4-4v8" stroke="#93a4c4" stroke-width="1.3"/>
+  <text x="92" y="650" font-family="Arial,sans-serif" font-size="16" font-weight="600" fill="#dbeafe">README.md</text>
+  <text x="976" y="650" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#8294b3">Preview</text>
+  <!-- 4. Actual animated header.svg: persistent -->
+  <svg x="72" y="680" width="936" height="281" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid meet" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace">
+    
+<title>KIISAFEZONE: independent software developer and open source creator</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#020617"/><stop offset=".55" stop-color="#0a1740"/><stop offset="1" stop-color="#172554"/></linearGradient>
+<linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity=".035"/></linearGradient>
+<linearGradient id="gs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset=".45" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#3b82f6" stop-opacity=".55"/></linearGradient>
+<filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
+<filter id="sh" x="-10%" y="-10%" width="120%" height="145%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".5"/></filter>
+<linearGradient id="shim" gradientUnits="userSpaceOnUse" x1="215.2" y1="0" x2="635.2" y2="0" spreadMethod="repeat"><stop offset="0" stop-color="#3b82f6"/><stop offset=".38" stop-color="#60a5fa"/><stop offset=".5" stop-color="#ffffff"/><stop offset=".62" stop-color="#60a5fa"/><stop offset="1" stop-color="#3b82f6"/><animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="420 0" dur="3.2s" repeatCount="indefinite"/></linearGradient>
+<clipPath id="bgclip"><rect width="800" height="240" rx="20"/></clipPath>
+<style>.static{display:none}@media (prefers-reduced-motion: reduce){.anim{display:none}.static{display:inline}}</style>
+<clipPath id="cp1"><rect x="72" y="75" width="0" height="19"><animate attributeName="width" values="0;7.8;15.6;23.4;31.2;39;46.8;54.6;62.4" dur="0.48s" begin="0.2s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="cp4"><rect x="166" y="155" width="0" height="22"><animate attributeName="width" values="0;9;18;27;36;45;54;63;72;81;90;99;108;117;126;135;144;153;162;171;180;189;198;207;216;225;234;243;252;261;270;279;288;297;306;315;324;333;342;351;360;369;378;387;396;405;414;423;432;441;450;459;468" dur="1.82s" begin="2.6s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="cp5"><rect x="236.2" y="183" width="0" height="19"><animate attributeName="width" values="0;7.8;15.6;23.4;31.2;39;46.8;54.6;62.4;70.2;78;85.8;93.6;101.4;109.2;117;124.8;132.6;140.4;148.2;156;163.8;171.6;179.4;187.2;195;202.8;210.6;218.4;226.2;234;241.8;249.6;257.4;265.2;273;280.8;288.6;296.4;304.2;312;319.8;327.6" dur="1.26s" begin="4.6s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+</defs>
+<g clip-path="url(#bgclip)"><rect width="800" height="240" fill="url(#bg)"/><g filter="url(#blur)"><circle cx="144" cy="72" r="120" fill="#2563eb" opacity=".6"><animate attributeName="cx" values="144;256;144" dur="10s" repeatCount="indefinite"/></circle><circle cx="672" cy="192" r="108" fill="#7c3aed" opacity=".32"><animate attributeName="cy" values="192;120;192" dur="12s" repeatCount="indefinite"/></circle><circle cx="440" cy="12" r="91.2" fill="#60a5fa" opacity=".25"><animate attributeName="cx" values="440;320;440" dur="14s" repeatCount="indefinite"/></circle></g></g>
+<rect x="40" y="28" width="720" height="184" rx="16" fill="url(#gf)" stroke="url(#gs)" stroke-width="1.2" filter="url(#sh)"/><path d="M40 62 V44 Q40 28 56 28 H744 Q760 28 760 44 V62 Z" fill="#fff" fill-opacity=".05"/><line x1="40" y1="62" x2="760" y2="62" stroke="#fff" stroke-opacity=".09"/><path d="M56 28.5 H744" stroke="#fff" stroke-opacity=".4" stroke-width="1"/><circle cx="60" cy="45" r="5.5" fill="#ff5f57"/><circle cx="80" cy="45" r="5.5" fill="#febc2e"/><circle cx="100" cy="45" r="5.5" fill="#28c840"/><text x="400" y="49" text-anchor="middle" font-size="12" fill="#cbd5e1" fill-opacity=".7">kiisafezone — zsh</text>
+<g class="anim">
+<text x="72" y="88" font-size="13" fill="#64748b" clip-path="url(#cp1)" xml:space="preserve">$ whoami</text>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0000;0.0467;0.0933;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="232.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&amp;<set attributeName="visibility" to="visible" begin="1.00s" dur="0.07s"/></text>
+<text x="232.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">/<set attributeName="visibility" to="visible" begin="1.07s" dur="0.07s"/></text>
+<text x="232.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">+<set attributeName="visibility" to="visible" begin="1.14s" dur="0.07s"/></text>
+<text x="232.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">1<set attributeName="visibility" to="visible" begin="1.21s" dur="0.07s"/></text>
+<text x="232.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">K<set attributeName="visibility" to="visible" begin="1.28s" fill="freeze"/></text>
+<text x="232.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">K<set attributeName="visibility" to="visible" begin="1.28s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0100;0.0567;0.1033;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="265.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&lt;<set attributeName="visibility" to="visible" begin="1.09s" dur="0.07s"/></text>
+<text x="265.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&gt;<set attributeName="visibility" to="visible" begin="1.16s" dur="0.07s"/></text>
+<text x="265.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">*<set attributeName="visibility" to="visible" begin="1.23s" dur="0.07s"/></text>
+<text x="265.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">1<set attributeName="visibility" to="visible" begin="1.30s" dur="0.07s"/></text>
+<text x="265.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">I<set attributeName="visibility" to="visible" begin="1.37s" fill="freeze"/></text>
+<text x="265.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">I<set attributeName="visibility" to="visible" begin="1.37s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0200;0.0667;0.1133;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="299.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">:<set attributeName="visibility" to="visible" begin="1.18s" dur="0.07s"/></text>
+<text x="299.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">}<set attributeName="visibility" to="visible" begin="1.25s" dur="0.07s"/></text>
+<text x="299.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">1<set attributeName="visibility" to="visible" begin="1.32s" dur="0.07s"/></text>
+<text x="299.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&lt;<set attributeName="visibility" to="visible" begin="1.39s" dur="0.07s"/></text>
+<text x="299.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">I<set attributeName="visibility" to="visible" begin="1.46s" fill="freeze"/></text>
+<text x="299.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">I<set attributeName="visibility" to="visible" begin="1.46s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0300;0.0767;0.1233;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="332.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">=<set attributeName="visibility" to="visible" begin="1.27s" dur="0.07s"/></text>
+<text x="332.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">=<set attributeName="visibility" to="visible" begin="1.34s" dur="0.07s"/></text>
+<text x="332.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&lt;<set attributeName="visibility" to="visible" begin="1.41s" dur="0.07s"/></text>
+<text x="332.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">#<set attributeName="visibility" to="visible" begin="1.48s" dur="0.07s"/></text>
+<text x="332.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">S<set attributeName="visibility" to="visible" begin="1.55s" fill="freeze"/></text>
+<text x="332.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">S<set attributeName="visibility" to="visible" begin="1.55s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0400;0.0867;0.1333;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="366.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&lt;<set attributeName="visibility" to="visible" begin="1.36s" dur="0.07s"/></text>
+<text x="366.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">=<set attributeName="visibility" to="visible" begin="1.43s" dur="0.07s"/></text>
+<text x="366.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">1<set attributeName="visibility" to="visible" begin="1.50s" dur="0.07s"/></text>
+<text x="366.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&gt;<set attributeName="visibility" to="visible" begin="1.57s" dur="0.07s"/></text>
+<text x="366.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">A<set attributeName="visibility" to="visible" begin="1.64s" fill="freeze"/></text>
+<text x="366.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">A<set attributeName="visibility" to="visible" begin="1.64s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0500;0.0967;0.1433;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="400.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">#<set attributeName="visibility" to="visible" begin="1.45s" dur="0.07s"/></text>
+<text x="400.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">1<set attributeName="visibility" to="visible" begin="1.52s" dur="0.07s"/></text>
+<text x="400.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">+<set attributeName="visibility" to="visible" begin="1.59s" dur="0.07s"/></text>
+<text x="400.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">1<set attributeName="visibility" to="visible" begin="1.66s" dur="0.07s"/></text>
+<text x="400.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">F<set attributeName="visibility" to="visible" begin="1.73s" fill="freeze"/></text>
+<text x="400.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">F<set attributeName="visibility" to="visible" begin="1.73s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0600;0.1067;0.1533;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="433.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">#<set attributeName="visibility" to="visible" begin="1.54s" dur="0.07s"/></text>
+<text x="433.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">1<set attributeName="visibility" to="visible" begin="1.61s" dur="0.07s"/></text>
+<text x="433.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">/<set attributeName="visibility" to="visible" begin="1.68s" dur="0.07s"/></text>
+<text x="433.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">%<set attributeName="visibility" to="visible" begin="1.75s" dur="0.07s"/></text>
+<text x="433.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">E<set attributeName="visibility" to="visible" begin="1.82s" fill="freeze"/></text>
+<text x="433.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">E<set attributeName="visibility" to="visible" begin="1.82s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0700;0.1167;0.1633;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="467.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">=<set attributeName="visibility" to="visible" begin="1.63s" dur="0.07s"/></text>
+<text x="467.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">/<set attributeName="visibility" to="visible" begin="1.70s" dur="0.07s"/></text>
+<text x="467.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&gt;<set attributeName="visibility" to="visible" begin="1.77s" dur="0.07s"/></text>
+<text x="467.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">%<set attributeName="visibility" to="visible" begin="1.84s" dur="0.07s"/></text>
+<text x="467.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">Z<set attributeName="visibility" to="visible" begin="1.91s" fill="freeze"/></text>
+<text x="467.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">Z<set attributeName="visibility" to="visible" begin="1.91s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0800;0.1267;0.1733;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="500.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">{<set attributeName="visibility" to="visible" begin="1.72s" dur="0.07s"/></text>
+<text x="500.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&gt;<set attributeName="visibility" to="visible" begin="1.79s" dur="0.07s"/></text>
+<text x="500.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">}<set attributeName="visibility" to="visible" begin="1.86s" dur="0.07s"/></text>
+<text x="500.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">*<set attributeName="visibility" to="visible" begin="1.93s" dur="0.07s"/></text>
+<text x="500.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">O<set attributeName="visibility" to="visible" begin="2.00s" fill="freeze"/></text>
+<text x="500.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">O<set attributeName="visibility" to="visible" begin="2.00s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.0900;0.1367;0.1833;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="534.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&gt;<set attributeName="visibility" to="visible" begin="1.81s" dur="0.07s"/></text>
+<text x="534.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&lt;<set attributeName="visibility" to="visible" begin="1.88s" dur="0.07s"/></text>
+<text x="534.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">1<set attributeName="visibility" to="visible" begin="1.95s" dur="0.07s"/></text>
+<text x="534.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">}<set attributeName="visibility" to="visible" begin="2.02s" dur="0.07s"/></text>
+<text x="534.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">N<set attributeName="visibility" to="visible" begin="2.09s" fill="freeze"/></text>
+<text x="534.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">N<set attributeName="visibility" to="visible" begin="2.09s" fill="freeze"/></text>
+</g>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0;0 0;0 -7;0 0;0 0" keyTimes="0.0000;0.1000;0.1467;0.1933;1.0000" dur="6s" begin="2.6s" repeatCount="indefinite"/>
+<text x="568.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">;<set attributeName="visibility" to="visible" begin="1.90s" dur="0.07s"/></text>
+<text x="568.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">=<set attributeName="visibility" to="visible" begin="1.97s" dur="0.07s"/></text>
+<text x="568.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">&amp;<set attributeName="visibility" to="visible" begin="2.04s" dur="0.07s"/></text>
+<text x="568.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#3b82f6" fill-opacity=".75" visibility="hidden">?<set attributeName="visibility" to="visible" begin="2.11s" dur="0.07s"/></text>
+<text x="568.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#2563eb" opacity=".8" filter="url(#glow)" visibility="hidden">E<set attributeName="visibility" to="visible" begin="2.18s" fill="freeze"/></text>
+<text x="568.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="url(#shim)" visibility="hidden">E<set attributeName="visibility" to="visible" begin="2.18s" fill="freeze"/></text>
+</g>
+<g opacity="0" style="mix-blend-mode:screen"><animate attributeName="opacity" values="0;.85;0;.85;0;0" keyTimes="0;.5;.52;.54;.56;1" calcMode="discrete" dur="6s" begin="3.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;-3 1;2 -1;-2 1;3 0;0 0" keyTimes="0;.5;.52;.54;.56;1" calcMode="discrete" dur="6s" begin="3.6s" repeatCount="indefinite"/><text x="232.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">K</text><text x="265.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">I</text><text x="299.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">I</text><text x="332.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">S</text><text x="366.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">A</text><text x="400.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">F</text><text x="433.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">E</text><text x="467.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">Z</text><text x="500.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">O</text><text x="534.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">N</text><text x="568.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#22d3ee">E</text></g>
+<g opacity="0" style="mix-blend-mode:screen"><animate attributeName="opacity" values="0;.85;0;.85;0;0" keyTimes="0;.5;.52;.54;.56;1" calcMode="discrete" dur="6s" begin="3.6s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0 0;3 1;-2 -1;2 1;-3 0;0 0" keyTimes="0;.5;.52;.54;.56;1" calcMode="discrete" dur="6s" begin="3.6s" repeatCount="indefinite"/><text x="232.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">K</text><text x="265.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">I</text><text x="299.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">I</text><text x="332.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">S</text><text x="366.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">A</text><text x="400.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">F</text><text x="433.6" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">E</text><text x="467.2" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">Z</text><text x="500.8" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">O</text><text x="534.4" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">N</text><text x="568.0" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#f43f5e">E</text></g>
+<text x="166" y="170" font-size="15" fill="#93c5fd" clip-path="url(#cp4)" xml:space="preserve">independent software developer | open source creator</text>
+<text x="236.2" y="196" font-size="13" fill="#64748b" clip-path="url(#cp5)" xml:space="preserve">Engineering ideas into practical software.</text>
+<rect x="567.8" y="184" width="8" height="15" fill="#60a5fa" opacity="0"><animate attributeName="opacity" values="1;0" dur="1s" begin="5.9s" repeatCount="indefinite" calcMode="discrete"/></rect>
+</g>
+<g class="static"><text x="72" y="88" font-size="13" fill="#64748b" xml:space="preserve">$ whoami</text><text x="400" y="140" text-anchor="middle" font-size="56" font-weight="800" fill="#60a5fa" textLength="369.6" lengthAdjust="spacing">KIISAFEZONE</text><text x="400" y="170" text-anchor="middle" font-size="15" fill="#93c5fd" xml:space="preserve">independent software developer | open source creator</text><text x="400" y="196" text-anchor="middle" font-size="13" fill="#64748b" xml:space="preserve">Engineering ideas into practical software.</text></g>
+
+  </svg>
+  <!-- 5. Single-line TOC -->
+  <path d="M60 979H1020" stroke="#7185aa" stroke-opacity=".25"/>
+  <rect x="52" y="987" width="126" height="48" rx="10" fill="url(#active)" opacity=".95"/>
+  <text x="115" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#fff">About</text>
+  <text x="270" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Approach</text>
+  <text x="425" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Projects</text>
+  <text x="580" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Stack</text>
+  <text x="735" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Analytics</text>
+  <text x="910" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Connect</text>
+  <path d="M60 1045H1020" stroke="#7185aa" stroke-opacity=".25"/>
+  <!-- 6. README viewport: current About section -->
+  <rect x="52" y="1063" width="976" height="570" rx="16" fill="url(#panel)" stroke="#7895c7" stroke-opacity=".24"/>
+  <text x="84" y="1117" font-family="JetBrains Mono,monospace" font-size="23" font-weight="700" fill="#dbeafe">kiisafezone:~$ about</text>
+  <path d="M84 1135H996" stroke="#4f78bd" stroke-width="2" stroke-opacity=".5"/>
+  <svg x="84" y="1150" width="912" height="467" viewBox="0 0 800 466" preserveAspectRatio="xMidYMid meet" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace">
+    
+<title>Independent software developer and open-source creator. Builds full-stack and Android apps, audits code for security issues, and automates work with AI-assisted tools.</title><desc>Independent software developer and open-source creator. Builds full-stack and Android apps, audits code for security issues, and automates work with AI-assisted tools.</desc>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#020617"/><stop offset=".55" stop-color="#0a1740"/><stop offset="1" stop-color="#172554"/></linearGradient>
+<linearGradient id="gf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity=".035"/></linearGradient>
+<linearGradient id="gs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset=".45" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#3b82f6" stop-opacity=".55"/></linearGradient>
+<filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="sh" x="-10%" y="-10%" width="120%" height="115%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".5"/></filter>
+<style>.static{display:none}@media (prefers-reduced-motion: reduce){.anim{display:none}.static{display:inline}}</style>
+<clipPath id="window"><rect width="800" height="466" rx="20"/></clipPath>
+<clipPath id="c0"><rect x="52" y="67" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2" dur="0.20s" begin="0.20s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c1"><rect x="52" y="91" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4" dur="0.20s" begin="0.46s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c2"><rect x="52" y="125" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6" dur="0.22s" begin="0.72s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c3"><rect x="52" y="153" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2" dur="0.29s" begin="1.00s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c4"><rect x="68" y="177" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2;159.6;168;176.4;184.8;193.2;201.6;210;218.4;226.8;235.2;243.6;252;260.4;268.8;277.2;285.6;294;302.4;310.8;319.2;327.6;336;344.4;352.8;361.2;369.6;378;386.4;394.8;403.2;411.6;420;428.4;436.8;445.2;453.6;462;470.4;478.8;487.2;495.6;504;512.4" dur="0.98s" begin="1.35s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c5"><rect x="68" y="201" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8" dur="0.20s" begin="2.39s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c6"><rect x="84" y="225" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2;159.6;168;176.4;184.8;193.2;201.6;210;218.4;226.8;235.2;243.6;252;260.4;268.8;277.2;285.6;294" dur="0.56s" begin="2.65s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c7"><rect x="84" y="249" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2;159.6;168;176.4;184.8;193.2;201.6;210;218.4;226.8;235.2;243.6;252;260.4;268.8;277.2;285.6;294;302.4;310.8;319.2;327.6" dur="0.62s" begin="3.27s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c8"><rect x="84" y="273" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2;159.6;168;176.4;184.8;193.2;201.6;210;218.4;226.8;235.2;243.6;252;260.4;268.8;277.2;285.6;294" dur="0.56s" begin="3.95s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c9"><rect x="84" y="297" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2;159.6;168;176.4;184.8;193.2;201.6;210;218.4;226.8;235.2;243.6;252;260.4;268.8;277.2;285.6" dur="0.54s" begin="4.57s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c10"><rect x="68" y="321" width="0" height="22"><animate attributeName="width" values="0;8.4" dur="0.20s" begin="5.18s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c11"><rect x="68" y="345" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2;159.6;168;176.4;184.8;193.2;201.6;210;218.4;226.8;235.2;243.6;252;260.4;268.8;277.2;285.6;294;302.4;310.8;319.2;327.6;336;344.4;352.8;361.2" dur="0.69s" begin="5.44s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c12"><rect x="68" y="369" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2;159.6;168;176.4;184.8;193.2;201.6;210;218.4;226.8;235.2;243.6;252;260.4;268.8;277.2;285.6;294" dur="0.56s" begin="6.18s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+<clipPath id="c13"><rect x="52" y="405" width="0" height="22"><animate attributeName="width" values="0;8.4;16.8;25.2;33.6;42;50.4;58.8;67.2;75.6;84;92.4;100.8;109.2;117.6;126;134.4;142.8;151.2" dur="0.29s" begin="6.80s" fill="freeze" calcMode="discrete"/></rect></clipPath>
+</defs>
+<g clip-path="url(#window)"><rect width="800" height="466" fill="url(#bg)"/><g filter="url(#blur)"><circle cx="144" cy="140" r="210" fill="#2563eb" opacity=".35"/><circle cx="672" cy="363" r="190" fill="#7c3aed" opacity=".2"/><circle cx="440" cy="30" r="160" fill="#60a5fa" opacity=".18"/></g></g>
+<rect x="24" y="20" width="752" height="426" rx="16" fill="url(#gf)" stroke="url(#gs)" stroke-width="1.2" filter="url(#sh)"/><path d="M24 54 V36 Q24 20 40 20 H760 Q776 20 776 36 V54 Z" fill="#fff" fill-opacity=".05"/><line x1="24" y1="54" x2="776" y2="54" stroke="#fff" stroke-opacity=".09"/><path d="M40 20.5 H760" stroke="#fff" stroke-opacity=".4" stroke-width="1"/><circle cx="44" cy="37" r="5.5" fill="#ff5f57"/><circle cx="64" cy="37" r="5.5" fill="#febc2e"/><circle cx="84" cy="37" r="5.5" fill="#28c840"/><text x="400" y="41" text-anchor="middle" font-size="13" fill="#cbd5e1" fill-opacity=".7">about.py — kiisafezone</text>
+<g class="anim" font-size="14">
+<text x="52" y="84" clip-path="url(#c0)" xml:space="preserve"><tspan fill="#3b82f6" font-weight="700">$ whoami</tspan></text>
+<text x="52" y="108" clip-path="url(#c1)" xml:space="preserve"><tspan fill="#93c5fd">kiisafezone</tspan></text>
+<text x="52" y="142" clip-path="url(#c2)" xml:space="preserve"><tspan fill="#3b82f6" font-weight="700">$ cat about.py</tspan></text>
+<text x="52" y="170" clip-path="url(#c3)" xml:space="preserve"><tspan fill="#60a5fa">class</tspan><tspan fill="#e2e8f0"> </tspan><tspan fill="#fbbf24">KiiSafeZone</tspan><tspan fill="#e2e8f0">:</tspan></text>
+<text x="68" y="194" clip-path="url(#c4)" xml:space="preserve"><tspan fill="#e2e8f0">role = </tspan><tspan fill="#86efac">"independent software developer &amp; open-source creator"</tspan></text>
+<text x="68" y="218" clip-path="url(#c5)" xml:space="preserve"><tspan fill="#e2e8f0">can = [</tspan></text>
+<text x="84" y="242" clip-path="url(#c6)" xml:space="preserve"><tspan fill="#86efac">"Full-stack &amp; Android development",</tspan></text>
+<text x="84" y="266" clip-path="url(#c7)" xml:space="preserve"><tspan fill="#86efac">"Application security &amp; code auditing",</tspan></text>
+<text x="84" y="290" clip-path="url(#c8)" xml:space="preserve"><tspan fill="#86efac">"AI-assisted automation &amp; tooling",</tspan></text>
+<text x="84" y="314" clip-path="url(#c9)" xml:space="preserve"><tspan fill="#86efac">"Software quality &amp; architecture",</tspan></text>
+<text x="68" y="338" clip-path="url(#c10)" xml:space="preserve"><tspan fill="#e2e8f0">]</tspan></text>
+<text x="68" y="362" clip-path="url(#c11)" xml:space="preserve"><tspan fill="#e2e8f0">speaks = [</tspan><tspan fill="#86efac">"Indonesian (native)"</tspan><tspan fill="#e2e8f0">, </tspan><tspan fill="#86efac">"English"</tspan><tspan fill="#e2e8f0">]</tspan></text>
+<text x="68" y="386" clip-path="url(#c12)" xml:space="preserve"><tspan fill="#e2e8f0">motto = </tspan><tspan fill="#86efac">"evidence over assumptions"</tspan></text>
+<text x="52" y="422" clip-path="url(#c13)" xml:space="preserve"><tspan fill="#64748b"># nice to meet you</tspan></text>
+<rect x="207.2" y="410" width="8" height="15" fill="#60a5fa" opacity="0"><animate attributeName="opacity" values="1;0" dur="1s" begin="7.15s" repeatCount="indefinite" calcMode="discrete"/></rect>
+</g><g class="static" font-size="14">
+<text x="52" y="84" xml:space="preserve"><tspan fill="#3b82f6" font-weight="700">$ whoami</tspan></text>
+<text x="52" y="108" xml:space="preserve"><tspan fill="#93c5fd">kiisafezone</tspan></text>
+<text x="52" y="142" xml:space="preserve"><tspan fill="#3b82f6" font-weight="700">$ cat about.py</tspan></text>
+<text x="52" y="170" xml:space="preserve"><tspan fill="#60a5fa">class</tspan><tspan fill="#e2e8f0"> </tspan><tspan fill="#fbbf24">KiiSafeZone</tspan><tspan fill="#e2e8f0">:</tspan></text>
+<text x="68" y="194" xml:space="preserve"><tspan fill="#e2e8f0">role = </tspan><tspan fill="#86efac">"independent software developer &amp; open-source creator"</tspan></text>
+<text x="68" y="218" xml:space="preserve"><tspan fill="#e2e8f0">can = [</tspan></text>
+<text x="84" y="242" xml:space="preserve"><tspan fill="#86efac">"Full-stack &amp; Android development",</tspan></text>
+<text x="84" y="266" xml:space="preserve"><tspan fill="#86efac">"Application security &amp; code auditing",</tspan></text>
+<text x="84" y="290" xml:space="preserve"><tspan fill="#86efac">"AI-assisted automation &amp; tooling",</tspan></text>
+<text x="84" y="314" xml:space="preserve"><tspan fill="#86efac">"Software quality &amp; architecture",</tspan></text>
+<text x="68" y="338" xml:space="preserve"><tspan fill="#e2e8f0">]</tspan></text>
+<text x="68" y="362" xml:space="preserve"><tspan fill="#e2e8f0">speaks = [</tspan><tspan fill="#86efac">"Indonesian (native)"</tspan><tspan fill="#e2e8f0">, </tspan><tspan fill="#86efac">"English"</tspan><tspan fill="#e2e8f0">]</tspan></text>
+<text x="68" y="386" xml:space="preserve"><tspan fill="#e2e8f0">motto = </tspan><tspan fill="#86efac">"evidence over assumptions"</tspan></text>
+<text x="52" y="422" xml:space="preserve"><tspan fill="#64748b"># nice to meet you</tspan></text>
+</g>
+  </svg>
+</g>
+<text x="540" y="1732" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" letter-spacing="3" fill="#a5b4fc">KIISAFEZONE · README CINEMATIC SHOWCASE</text>
+<text x="540" y="1762" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#647da9">1080 × 1920 · 9:16 PORTRAIT</text>
+</svg>
