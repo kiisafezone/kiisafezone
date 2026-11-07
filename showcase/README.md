@@ -1,73 +1,49 @@
 # kiisafezone README Showcase
 
-A cinematic Remotion composition built around the real visual assets in the repository's English profile README.
+A cinematic portrait showcase rendered from the animated SVG composition in this repository.
 
 ## Video specification
 
-- Composition: `ReadmeShowcase`
-- Resolution: 1080 × 2436 (portrait, 20:45)
+- Source: `assets/macos-readme-showcase.svg`
+- Canvas: 1080 × 1920 (9:16 portrait)
 - Frame rate: 30 FPS
-- Duration: 60 seconds
-- Output: MP4 (H.264, Remotion default)
+- Duration: 59 seconds
+- Output: MP4 (H.264)
 
-## Requirements
+## Render in Google Colab
 
-- Node.js 18 or newer (Node.js 20 LTS recommended)
-- npm
-- A supported desktop or cloud environment for Chromium-based rendering
+[Open the render notebook in Google Colab](https://colab.research.google.com/github/kiisafezone/kiisafezone/blob/main/showcase/render-on-colab.ipynb).
 
-Rendering requires a compatible Chromium environment and FFmpeg. An Android phone can be used to review/edit the source in GitHub, but it is not the recommended environment for rendering the final MP4.
+1. Connect to a hosted Google Colab runtime.
+2. Run the cells from top to bottom.
+3. The setup cell reuses dependencies already present and installs only missing components.
+4. The notebook fetches the latest `main` branch, validates the SVG dimensions, renders the MP4, verifies the output, and downloads it.
 
-## Render in Google Colab (recommended for Android)
+The renderer is `svg-to-video`. It requires Chrome or Chromium, FFmpeg, and Rust/Cargo. On a fresh runtime, any missing dependencies and the renderer may need to be installed once; rerunning the setup cell in the same runtime reuses what is already installed.
 
-Open the [render notebook in Google Colab](https://colab.research.google.com/github/kiisafezone/kiisafezone/blob/main/showcase/render-on-colab.ipynb), connect to a runtime, then run the cells from top to bottom. The notebook installs Node.js and FFmpeg in a temporary cloud runtime, clones this repository, renders the MP4, and downloads it to your device. It does not create GitHub Actions workflows or change repository files. Colab runtime availability and limits depend on Google's current free-tier policies.
+The notebook does not create GitHub Actions workflows or modify repository source files. Colab runtime availability and limits depend on Google's current policies.
 
-## Run locally
+## Render settings
 
-From this directory:
-
-```bash
-npm install
-npm run dev
-```
-
-Open the Remotion Studio URL printed in the terminal and select **ReadmeShowcase**.
-
-## Render MP4
+The notebook runs:
 
 ```bash
-npm run render
+svg-to-video video assets/macos-readme-showcase.svg out/showcase.mp4 \
+  --duration 59 \
+  --fps 30 \
+  --width 1080 \
+  --height 1920 \
+  --codec h264
 ```
 
-The video will be written to:
+The rendered file is saved as `out/showcase.mp4` in the Colab runtime.
 
-```
-out/kiisafezone-showcase.mp4
-```
+## Source layout
 
-Render a still frame for a quick check:
-
-```bash
-npm run still
-```
-
-## Scenes
-
-1. Intro — profile identity
-2. Header — README header and Table of Contents
-3. About — terminal-style introduction
-4. Approach — workflow graphic
-5. Projects — existing project card artwork
-6. Tech & Tools — animated technology SVG
-7. Closing — repository footer and profile link
-
-## Asset handling
-
-The composition references the existing SVG artwork directly from the repository's `main` branch using GitHub's raw-content URLs. Keep an internet connection available during preview and rendering. Updating the README artwork on `main` will be reflected in future renders.
+The SVG contains the persistent macOS-style browser and GitHub/README chrome, with timed README sections and a closing EOF scene. The notebook renders the existing SVG directly; it does not rebuild the composition in Remotion.
 
 ## Notes
 
-- This is a standalone video project; it does not change either README.
+- Work from the repository's `main` branch.
 - No GitHub Actions workflow or automated CI rendering is configured.
-- Remotion packages are pinned to the same exact version to avoid package-version mismatches.
-- Check the [Remotion license](https://www.remotion.dev/license) for your intended use before distributing the rendered video.
+- The MP4 is generated in the temporary Colab runtime and downloaded to the device; it is not committed back to the repository.
