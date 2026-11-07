@@ -4,6 +4,7 @@ import { HeaderSvgOnly, ReadmeShowcase } from "./Showcase";
 
 export const RemotionRoot: React.FC = () => {
   return (
+    <>
     <Composition
       id="ReadmeShowcase"
       component={ReadmeShowcase}
@@ -20,5 +21,6 @@ export const RemotionRoot: React.FC = () => {
       width={1080}
       height={324}
     />
+    </>
   );
 };
