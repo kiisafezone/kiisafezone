@@ -49,46 +49,83 @@
   <circle cx="974" cy="348" r="13" fill="#536b94"/>
   <circle cx="974" cy="344" r="4" fill="#dce7f8"/><path d="M966 357q8-13 16 0" fill="#dce7f8"/>
   <circle cx="1020" cy="348" r="2" fill="#cbd5e1"/><circle cx="1020" cy="355" r="2" fill="#cbd5e1"/><circle cx="1020" cy="341" r="2" fill="#cbd5e1"/>
-  <!-- 2. GitHub global navigation: static, repository-page layout -->
-  <rect x="26" y="405" width="1028" height="76" fill="#010409"/>
-  <rect x="49" y="422" width="42" height="42" rx="9" fill="none" stroke="#30363d" stroke-width="1.5"/>
-  <path d="M62 435h16m-16 8h16m-16 8h10" stroke="#e6edf3" stroke-width="2" stroke-linecap="round"/>
-  <!-- GitHub Octocat mark -->
-  <path d="M128 416c-14 0-25 11.4-25 25.5 0 11.3 7.2 20.9 17.2 24.3 1.3.2 1.7-.6 1.7-1.2v-4.5c-7 .0-8.5-3-8.5-3-1.1-2.8-2.8-3.5-2.8-3.5-2.3-1.6.2-1.6.2-1.6 2.5.2 3.8 2.6 3.8 2.6 2.2 3.9 5.8 2.8 7.3 2.1.2-1.6.9-2.8 1.6-3.4-5.6-.7-11.5-2.9-11.5-12.6 0-2.8 1-5.1 2.6-6.9-.3-.7-1.1-3.3.3-6.8 0 0 2.1-.7 7 2.6a24 24 0 0 1 12.8 0c4.9-3.3 7-2.6 7-2.6 1.4 3.5.5 6.1.3 6.8 1.6 1.8 2.6 4.1 2.6 6.9 0 9.7-5.9 11.9-11.5 12.6.9.8 1.7 2.3 1.7 4.7v6.7c0 .7.5 1.5 1.8 1.2 10-3.4 17.1-13 17.1-24.3 0-14.1-11.2-25.5-25-25.5Z" fill="#f0f6fc" transform="translate(0 0) scale(.94) translate(8 3)"/>
-  <rect x="175" y="421" width="426" height="44" rx="9" fill="#0d1117" stroke="#30363d"/>
-  <text x="194" y="448" font-family="Arial,sans-serif" font-size="16" fill="#8b949e">Search or jump to...</text>
-  <rect x="563" y="431" width="24" height="24" rx="5" fill="none" stroke="#484f58"/>
-  <text x="575" y="448" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#8b949e">/</text>
-  <!-- GitHub repository-page actions -->
-  <path d="M641 434h18v18h-18zM650 430v26m-13-13h26" fill="none" stroke="#c9d1d9" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M691 438h20m-10-8v16m-7-8h14" stroke="#c9d1d9" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M744 432l9 8-9 8m9-8h-18" fill="none" stroke="#c9d1d9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M792 433c-7 0-12 5-12 12v7h24v-7c0-7-5-12-12-12Zm-4-5a4 4 0 1 0 8 0" fill="none" stroke="#c9d1d9" stroke-width="1.5"/>
-  <path d="M842 431h18v20h-18zM847 436h8m-8 5h8m-8 5h5" fill="none" stroke="#c9d1d9" stroke-width="1.4"/>
-  <circle cx="964" cy="443" r="18" fill="#27364f" stroke="#536b91"/>
-  <circle cx="964" cy="438" r="6" fill="#a5b4cc"/><path d="M952 455q12-20 24 0" fill="#a5b4cc"/>
-  <path d="M1000 434h14m-7-7v14m-7-7h14" stroke="#c9d1d9" stroke-width="1.5" stroke-linecap="round"/>
-  <!-- 3. README / repository header: static -->
-  <rect x="26" y="481" width="1028" height="126" fill="#0d172b"/>
-  <text x="66" y="526" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#e2e8f0">kiisafezone <tspan fill="#94a3b8">/</tspan> kiisafezone</text>
-  <rect x="424" y="498" width="76" height="26" rx="13" fill="none" stroke="#7184a8" stroke-opacity=".7"/>
-  <text x="462" y="516" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#aab8d0">Public</text>
-  <path d="M52 563H1028" stroke="#64748b" stroke-opacity=".32"/>
-  <text x="68" y="590" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Code</text>
-  <text x="166" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Issues</text>
-  <text x="268" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Pull requests</text>
-  <text x="420" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Actions</text>
-  <text x="516" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Projects</text>
-  <text x="628" y="590" font-family="Arial,sans-serif" font-size="16" fill="#94a3b8">Security</text>
-  <path d="M55 606H119" stroke="#60a5fa" stroke-width="3"/>
-  <!-- 3b. README file header: static -->
-  <rect x="48" y="620" width="984" height="48" rx="8" fill="#111d33" stroke="#64748b" stroke-opacity=".28"/>
-  <circle cx="72" cy="644" r="8" fill="none" stroke="#93a4c4" stroke-width="1.5"/>
-  <path d="M68 644h8m-4-4v8" stroke="#93a4c4" stroke-width="1.3"/>
-  <text x="92" y="650" font-family="Arial,sans-serif" font-size="16" font-weight="600" fill="#dbeafe">README.md</text>
-  <text x="976" y="650" text-anchor="end" font-family="Arial,sans-serif" font-size="13" fill="#8294b3">Preview</text>
+  <!-- 2. GitHub global header: two-level repository navigation, static -->
+  <rect x="26" y="405" width="1028" height="115" fill="#010409"/>
+  <!-- Global GitHub bar: menu, Octocat, repository breadcrumb, global actions -->
+  <rect x="49" y="418" width="38" height="38" rx="9" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <path d="M60 429h16m-16 8h16m-16 8h10" stroke="#e6edf3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M119 414c-13 0-23 10.5-23 23.5 0 10.4 6.6 19.2 15.8 22.3 1.2.2 1.6-.5 1.6-1.1v-4.1c-6.4 0-7.8-2.8-7.8-2.8-1-2.6-2.6-3.2-2.6-3.2-2.1-1.5.2-1.5.2-1.5 2.3.2 3.5 2.4 3.5 2.4 2 3.6 5.3 2.6 6.7 1.9.2-1.5.8-2.6 1.5-3.1-5.1-.7-10.6-2.7-10.6-11.6 0-2.6.9-4.7 2.4-6.3-.3-.7-1-3 .3-6.3 0 0 1.9-.7 6.4 2.4a22 22 0 0 1 11.8 0c4.5-3.1 6.4-2.4 6.4-2.4 1.3 3.3.5 5.6.3 6.3 1.5 1.6 2.4 3.7 2.4 6.3 0 8.9-5.4 10.9-10.6 11.6.8.7 1.5 2.1 1.5 4.3v6.2c0 .6.5 1.4 1.7 1.1 9.2-3.1 15.7-11.9 15.7-22.3 0-13-10.3-23.5-23-23.5Z" fill="#f0f6fc"/>
+  <text x="166" y="445" font-family="Arial,sans-serif" font-size="17" fill="#e6edf3">kiisafezone</text>
+  <path d="M281 430l7 7-7 7" fill="none" stroke="#8b949e" stroke-width="1.7"/>
+  <text x="311" y="445" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#e6edf3">kiisafezone</text>
+  <path d="M439 433l6 6 6-6" fill="none" stroke="#8b949e" stroke-width="1.5"/>
+  <!-- Right-side GitHub controls -->
+  <rect x="785" y="416" width="43" height="39" rx="9" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <circle cx="806" cy="434" r="8" fill="none" stroke="#c9d1d9" stroke-width="1.8"/>
+  <path d="M812 440l6 6" stroke="#c9d1d9" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="840" y="416" width="66" height="39" rx="9" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <path d="M861 435h14m-7-7v14m23-7l-5 4-5-4" fill="none" stroke="#c9d1d9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="918" y="416" width="44" height="39" rx="9" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <path d="M930 429h19l3 17h-25l3-17Zm4 0 3-5h7l3 5" fill="none" stroke="#c9d1d9" stroke-width="1.6" stroke-linejoin="round"/>
+  <circle cx="953" cy="418" r="5" fill="#58a6ff"/>
+  <circle cx="1003" cy="435" r="19" fill="#b08a54" stroke="#6e7681" stroke-width="1.5"/>
+  <circle cx="1003" cy="430" r="7" fill="#f2d6a2"/>
+  <path d="M989 449q14-22 28 0" fill="#e8c58e"/>
+  <!-- Repository navigation tabs -->
+  <path d="M26 466H1054" stroke="#30363d"/>
+  <g font-family="Arial,sans-serif" font-size="15" fill="#e6edf3">
+    <text x="62" y="497" font-weight="700">Code</text>
+    <text x="147" y="497">Issues</text>
+    <text x="239" y="497">Pull requests</text>
+    <text x="383" y="497">Agents</text>
+    <text x="480" y="497">Actions</text>
+    <text x="583" y="497">Projects</text>
+    <text x="690" y="497">Wiki</text>
+    <path d="M891 476V506" stroke="#30363d"/>
+    <text x="916" y="497">More</text>
+    <path d="M984 491l6 6 6-6" fill="none" stroke="#8b949e" stroke-width="1.4"/>
+  </g>
+  <path d="M49 518H121" stroke="#f78166" stroke-width="3"/>
+  <!-- 3. Repository identity and README file header: static -->
+  <rect x="26" y="520" width="1028" height="160" fill="#0d1117"/>
+  <circle cx="67" cy="552" r="18" fill="#b08a54" stroke="#6e7681" stroke-width="1.4"/>
+  <circle cx="67" cy="547" r="6.5" fill="#f2d6a2"/>
+  <path d="M54 565q13-20 26 0" fill="#e8c58e"/>
+  <text x="94" y="561" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#e6edf3">kiisafezone</text>
+  <rect x="247" y="539" width="70" height="25" rx="12.5" fill="none" stroke="#6e7681" stroke-width="1.2"/>
+  <text x="282" y="556" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#8b949e">Public</text>
+  <!-- Repository actions -->
+  <g fill="#c9d1d9" stroke="#8b949e" stroke-width="1.3">
+    <rect x="51" y="581" width="82" height="39" rx="8" fill="#21262d"/>
+    <path d="M69 608l19-19 8 8-19 19-9 2Z" fill="none"/>
+    <rect x="145" y="581" width="205" height="39" rx="8" fill="#21262d"/>
+    <path d="M165 601c0-7 8-12 15-12s15 5 15 12-8 12-15 12-15-5-15-12Z" fill="none"/>
+    <path d="M200 581V620" />
+    <rect x="363" y="581" width="164" height="39" rx="8" fill="#21262d"/>
+    <path d="M385 591l12 8-12 8m12-8h13m-13 0v-8m0 8v8" fill="none"/>
+    <path d="M493 581V620"/>
+    <rect x="540" y="581" width="42" height="39" rx="8" fill="#21262d"/>
+    <path d="M561 589l4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1Z" fill="none"/>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#e6edf3">
+    <text x="91" y="606" text-anchor="middle">Pin</text>
+    <text x="225" y="606" text-anchor="middle">Watch</text>
+    <circle cx="302" cy="600" r="11" fill="none" stroke="#8b949e" stroke-width="1.2"/>
+    <text x="302" y="605" text-anchor="middle" font-size="12">1</text>
+    <path d="M329 598l5 5 5-5" fill="none" stroke="#8b949e" stroke-width="1.4"/>
+    <text x="444" y="606" text-anchor="middle">Fork</text>
+    <circle cx="478" cy="600" r="10" fill="none" stroke="#8b949e" stroke-width="1.2"/>
+    <text x="478" y="605" text-anchor="middle" font-size="12">0</text>
+    <path d="M510 598l5 5 5-5" fill="none" stroke="#8b949e" stroke-width="1.4"/>
+  </g>
+  <!-- README file bar -->
+  <rect x="48" y="638" width="984" height="34" rx="7" fill="#161b22" stroke="#30363d"/>
+  <path d="M64 647h13l5 5v13H64Z" fill="none" stroke="#8b949e" stroke-width="1.2"/>
+  <path d="M77 647v6h5" fill="none" stroke="#8b949e" stroke-width="1.2"/>
+  <text x="94" y="660" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#e6edf3">README.md</text>
+  <text x="1009" y="660" text-anchor="end" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Preview</text>
   <!-- 4. Actual animated header.svg: persistent -->
-  <svg x="72" y="680" width="936" height="281" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid meet" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace">
+  <svg x="72" y="700" width="936" height="281" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid meet" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace">
     
 <title>KIISAFEZONE: independent software developer and open source creator</title>
 <defs>
@@ -218,21 +255,21 @@
 
   </svg>
   <!-- 5. Single-line TOC -->
-  <path d="M60 979H1020" stroke="#7185aa" stroke-opacity=".25"/>
-  <rect x="53" y="987" width="108" height="48" rx="10" fill="url(#active)" opacity=".95"/>
-  <text x="107" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">About</text>
+  <path d="M60 999H1020" stroke="#7185aa" stroke-opacity=".25"/>
+  <rect x="53" y="1007" width="108" height="48" rx="10" fill="url(#active)" opacity=".95"/>
+  <text x="107" y="1037" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">About</text>
   <text x="245" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Approach</text>
   <text x="380" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Projects</text>
   <text x="515" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Stack</text>
   <text x="650" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Analytics</text>
   <text x="790" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Connect</text>
   <text x="935" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Guestbook</text>
-  <path d="M60 1045H1020" stroke="#7185aa" stroke-opacity=".25"/>
+  <path d="M60 1065H1020" stroke="#7185aa" stroke-opacity=".25"/>
   <!-- 6. README viewport: current About section -->
-  <rect x="52" y="1063" width="976" height="570" rx="16" fill="url(#panel)" stroke="#7895c7" stroke-opacity=".24"/>
-  <text x="84" y="1117" font-family="JetBrains Mono,monospace" font-size="23" font-weight="700" fill="#dbeafe">kiisafezone:~$ about</text>
-  <path d="M84 1135H996" stroke="#4f78bd" stroke-width="2" stroke-opacity=".5"/>
-  <svg x="84" y="1150" width="912" height="467" viewBox="0 0 800 466" preserveAspectRatio="xMidYMid meet" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace">
+  <rect x="52" y="1083" width="976" height="550" rx="16" fill="url(#panel)" stroke="#7895c7" stroke-opacity=".24"/>
+  <text x="84" y="1137" font-family="JetBrains Mono,monospace" font-size="23" font-weight="700" fill="#dbeafe">kiisafezone:~$ about</text>
+  <path d="M84 1155H996" stroke="#4f78bd" stroke-width="2" stroke-opacity=".5"/>
+  <svg x="84" y="1170" width="912" height="447" viewBox="0 0 800 466" preserveAspectRatio="xMidYMid meet" font-family="JetBrains Mono, SFMono-Regular, Menlo, monospace">
     
 <title>Independent software developer and open-source creator. Builds full-stack and Android apps, audits code for security issues, and automates work with AI-assisted tools.</title><desc>Independent software developer and open-source creator. Builds full-stack and Android apps, audits code for security issues, and automates work with AI-assisted tools.</desc>
 <defs>
