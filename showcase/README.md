@@ -5,7 +5,7 @@ A cinematic Remotion composition built around the real visual assets in the repo
 ## Video specification
 
 - Composition: `ReadmeShowcase`
-- Resolution: 1920 × 1080 (16:9)
+- Resolution: 1080 × 2436 (portrait, 20:45)
 - Frame rate: 30 FPS
 - Duration: 60 seconds
 - Output: MP4 (H.264, Remotion default)
