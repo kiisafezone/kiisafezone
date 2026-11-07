@@ -194,13 +194,14 @@
   </svg>
   <!-- 5. Single-line TOC -->
   <path d="M60 979H1020" stroke="#7185aa" stroke-opacity=".25"/>
-  <rect x="52" y="987" width="126" height="48" rx="10" fill="url(#active)" opacity=".95"/>
-  <text x="115" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#fff">About</text>
-  <text x="270" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Approach</text>
-  <text x="425" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Projects</text>
-  <text x="580" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Stack</text>
-  <text x="735" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Analytics</text>
-  <text x="910" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#cbd5e1">Connect</text>
+  <rect x="53" y="987" width="108" height="48" rx="10" fill="url(#active)" opacity=".95"/>
+  <text x="107" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">About</text>
+  <text x="245" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Approach</text>
+  <text x="380" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Projects</text>
+  <text x="515" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Stack</text>
+  <text x="650" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Analytics</text>
+  <text x="790" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Connect</text>
+  <text x="935" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#cbd5e1">Guestbook</text>
   <path d="M60 1045H1020" stroke="#7185aa" stroke-opacity=".25"/>
   <!-- 6. README viewport: current About section -->
   <rect x="52" y="1063" width="976" height="570" rx="16" fill="url(#panel)" stroke="#7895c7" stroke-opacity=".24"/>
