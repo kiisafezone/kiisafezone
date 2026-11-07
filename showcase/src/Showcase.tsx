@@ -108,6 +108,11 @@ const AnimatedSvg: React.FC<{
   );
 };
 
+export const HeaderSvgOnly: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: "#0b1020", alignItems: "center", justifyContent: "center", padding: 36, boxSizing: "border-box" }}>
+    <AnimatedSvg src={asset("header.svg")} playbackRate={0.5} style={{ width: "100%", height: "100%" }} />
+  </AbsoluteFill>
+);
 const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div style={{ color: "#9bb8ff", fontSize: 17, letterSpacing: 5, fontWeight: 700, textTransform: "uppercase" }}>
     {children}
