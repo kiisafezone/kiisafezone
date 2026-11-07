@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   AbsoluteFill,
   Easing,
@@ -56,6 +56,57 @@ const Glow: React.FC<{ x?: string; y?: string; color?: string; size?: number }> 
     }}
   />
 );
+
+const AnimatedSvg: React.FC<{
+  src: string;
+  style?: React.CSSProperties;
+  playbackRate?: number;
+}> = ({ src, style, playbackRate = 0.5 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [markup, setMarkup] = useState("");
+
+  useEffect(() => {
+    let cancelled = false;
+
+    fetch(src)
+      .then((response) => {
+        if (!response.ok) throw new Error(`SVG request failed: ${response.status}`);
+        return response.text();
+      })
+      .then((svgText) => {
+        if (!cancelled) setMarkup(svgText);
+      })
+      .catch((error) => {
+        console.error("Unable to load animated SVG:", error);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [src]);
+
+  useLayoutEffect(() => {
+    const svg = containerRef.current?.querySelector("svg");
+    if (!svg) return;
+
+    svg.setAttribute("width", "100%");
+    svg.setAttribute("height", "100%");
+
+    const animatedSvg = svg as SVGSVGElement;
+    animatedSvg.pauseAnimations?.();
+    animatedSvg.setCurrentTime?.((frame / fps) * playbackRate);
+  }, [frame, fps, markup, playbackRate]);
+
+  return (
+    <div
+      ref={containerRef}
+      style={{ width: "100%", height: "100%", ...style }}
+      dangerouslySetInnerHTML={markup ? { __html: markup } : undefined}
+    />
+  );
+};
 
 const Eyebrow: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div style={{ color: "#9bb8ff", fontSize: 17, letterSpacing: 5, fontWeight: 700, textTransform: "uppercase" }}>
@@ -128,7 +179,7 @@ const HeaderScene: React.FC = () => {
         <Browser>
           <div style={{ transform: `translateY(${y}px)`, padding: "46px 42px 80px", color: C.white, fontFamily: "Arial, sans-serif" }}>
             <div style={{ textAlign: "center" }}>
-              <Img src={asset("header.svg")} style={{ width: "100%", height: 280, objectFit: "contain" }} />
+              <AnimatedSvg src={asset("header.svg")} playbackRate={0.5} style={{ width: "100%", height: 280 }} />
               <div style={{ marginTop: 14, color: "#9eb0d2", fontSize: 16, letterSpacing: 2 }}>PROFILE VIEWS　·　FOLLOWERS　·　ENGLISH / BAHASA INDONESIA</div>
               <Img src={asset("divider.svg")} style={{ width: "100%", height: 30, objectFit: "fill", marginTop: 28 }} />
               <div style={{ fontSize: 24, letterSpacing: 5, fontWeight: 800, margin: "14px 0 18px" }}>TABLE OF CONTENTS</div>
